@@ -1,28 +1,32 @@
 <!-- start intro -->
 <section class="bg-[#0471A6]">
-  <div class="container mx-auto">
+  <div class="container mx-auto px-4 sm:px-6 md:px-8">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 py-10">
+
+      <!-- Image Section -->
       <div class="relative w-full">
         <div style="position: relative; width: 100%;">
-          <img class=" h-full w-full" src="../../../assets/images/main-screen.svg" />
+          <img class="h-full w-full object-cover" src="../../../assets/images/main-screen.svg" alt="Main Screen" />
         </div>
       </div>
 
+      <!-- Text Section -->
       <div class="md:pl-3 py-5 flex flex-col justify-center">
+        <!-- Logo -->
         <div>
           <img src="../../../assets/images/footerLogo.svg" alt="footer-logo" class="h-[3rem]" />
         </div>
-        <div class="uppercase text-white font-medium text-5xl pt-5 pl-1">
+
+        <!-- Text Content -->
+        <div class="uppercase text-white font-medium text-3xl pt-5 pl-1">
           Educational Videos
           <br />
-          Created and Curate
+          Created and Curated
           <br />
-          by doctors
-          <br />
+          by Doctors
         </div>
       </div>
     </div>
-
   </div>
 </section>
 <!-- end intro -->
@@ -31,37 +35,36 @@
 <section>
   <div class="flex justify-center py-10">
     <input type="text" placeholder="Search educational videos..."
-      class="w-full md:w-2/3 lg:w-1/2 p-4 rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-[#92CD91]" />
+      class="w-full sm:w-3/4 md:w-2/3 lg:w-1/2 p-4 rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-[#92CD91]" />
   </div>
 </section>
 <!-- end searchbox -->
 
 <!-- start description -->
 <section class="bg-white">
-  <div class="container mx-auto">
-    <h1 class="flex justify-center text-black font-medium text-7xl pt-5 pl-1">
+  <div class="container mx-auto px-4 sm:px-6 md:px-8">
+    <!-- Heading Section -->
+    <h1 class="text-black font-medium text-4xl sm:text-5xl md:text-6xl lg:text-7xl pt-5 text-center">
       Clinician-driven patient
     </h1>
     <h1
-      class="text-7xl flex pt-2 justify-center font-bold bg-gradient-to-r from-[#0471A6] to-[#92CD91] bg-clip-text text-transparent">
+      class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl pt-2 text-center font-bold bg-gradient-to-r from-[#0471A6] to-[#92CD91] bg-clip-text text-transparent">
       education platforms
     </h1>
+
+    <!-- Content Section -->
     <div class="py-7 text-center mx-auto max-w-4xl space-y-6 text-gray-800">
-      <p class="text-xl leading-relaxed font-medium">
+      <p class="text-lg sm:text-xl leading-relaxed font-medium">
         Our video-based platforms help clinicians easily provide patients with
         <br />
-        comprehensive and reliable information on
-        heart health, diabetes, and wellness.
+        comprehensive and reliable information on heart health, diabetes, and wellness.
       </p>
-      <p class="text-xl leading-relaxed font-medium">
+      <p class="text-lg sm:text-xl leading-relaxed font-medium">
         Our goal is to empower patient learning and engagement throughout their care
-        <br /> journey - to improve health
-        outcomes while saving clinicians valuable time.
+        <br /> journey - to improve health outcomes while saving clinicians valuable time.
       </p>
     </div>
-
   </div>
-
 </section>
 <!-- end description -->
 
@@ -70,94 +73,88 @@
   <div class="container mx-auto">
     <h1 class="flex justify-center text-white font-medium text-4xl pt-5 pl-1">Our Digital Solutions</h1>
   </div>
-  <div class="flex flex-rpw justify-center py-6 gap-2 ">
-    <!-- website app -->
-    <div class="bg-white rounded-md">
-      <img src="../../../assets/images/web.svg" class="rounded-md" />
-      <div class=" flex flex-col justify-center items-center pt-2">
-        <p class="text-[#7A868C] text-1xl">
-          Custom Website
-        </p>
-        <div class="py-7 text-center mx-auto max-w-4xl space-y-6 text-gray-800">
-          <p class="text-xl font-bold leading-relaxed">For clinics &
-            <br />
-            provider systems
-          </p>
+
+  <!-- Flex container to hold the cards -->
+  <div class="flex flex-wrap justify-center py-6 gap-6">
+    <!-- Website App -->
+    <div class="bg-white rounded-md max-w-[350px] w-full sm:w-[45%] lg:w-[30%]">
+      <img src="../../../assets/images/web.svg" class="rounded-t-md w-full object-contain" />
+      <div class="flex flex-col justify-center items-center pt-4 pb-6">
+        <p class="text-[#7A868C] text-xl">Custom Website</p>
+        <div class="py-4 text-center text-gray-800">
+          <p class="text-xl font-bold leading-relaxed">For clinics &<br />provider systems</p>
         </div>
       </div>
     </div>
-    <!-- mobile app -->
-    <div class="bg-white rounded-md">
-      <img src="../../../assets/images/mobile.svg" class="rounded-md" />
-      <div class=" flex flex-col justify-center items-center pt-2">
-        <p class="text-[#7A868C] text-1xl">
-          Mobile App
-        </p>
-        <div class="py-7 text-center mx-auto max-w-4xl space-y-6 text-gray-800">
-          <p class="text-xl font-bold leading-relaxed">For on-the-go
-            <br />
-            clinicians
-          </p>
+
+    <!-- Mobile App -->
+    <div class="bg-white rounded-md max-w-[350px] w-full sm:w-[45%] lg:w-[30%]">
+      <img src="../../../assets/images/mobile.svg" class="rounded-t-md w-full object-contain" />
+      <div class="flex flex-col justify-center items-center pt-4 pb-6">
+        <p class="text-[#7A868C] text-xl">Mobile App</p>
+        <div class="py-4 text-center text-gray-800">
+          <p class="text-xl font-bold leading-relaxed">For on-the-go<br />clinicians</p>
         </div>
       </div>
     </div>
-    <!-- social app -->
-    <div class="bg-white rounded-md">
-      <img src="../../../assets/images/social_media.svg" class="rounded-md" />
-      <div class=" flex flex-col justify-center items-center pt-2">
-        <p class="text-[#7A868C] text-1xl">
-          Social Media
-        </p>
-        <div class="py-7 text-center mx-auto max-w-4xl space-y-6 text-gray-800">
-          <p class="text-xl font-bold leading-relaxed">For everyday
-            <br />
-            learning
-          </p>
+
+    <!-- Social App -->
+    <div class="bg-white rounded-md max-w-[350px] w-full sm:w-[45%] lg:w-[30%]">
+      <img src="../../../assets/images/social_media.svg" class="rounded-t-md w-full object-contain" />
+      <div class="flex flex-col justify-center items-center pt-4 pb-6">
+        <p class="text-[#7A868C] text-xl">Social Media</p>
+        <div class="py-4 text-center text-gray-800">
+          <p class="text-xl font-bold leading-relaxed">For everyday<br />learning</p>
         </div>
       </div>
     </div>
   </div>
-
 </section>
 <!-- end degital solution -->
 
 <section class="bg-white gap-5">
   <!--start explore content -->
-  <div>
+  <div class="bg-gray-100 py-10">
     <div class="container mx-auto">
-      <span class="flex justify-center text-black font-medium text-5xl pt-5 pl-1 gap-2">Explore
-        <span class="bg-gradient-to-r from-[#0471A6] to-[#92CD91] bg-clip-text text-transparent">
-          Content
+      <!-- Title Section -->
+      <div>
+        <span class="flex flex-wrap justify-center text-black font-medium text-4xl md:text-5xl pt-5 gap-2 text-center">
+          Explore
+          <span class="bg-gradient-to-r from-[#0471A6] to-[#92CD91] bg-clip-text text-transparent">
+            Content
+          </span>
         </span>
-      </span>
-    </div>
+      </div>
 
-    <div class="flex flex-rpw justify-center py-6 gap-2 ">
-      <!-- Heart helth education -->
-      <div class="bg-white rounded-md">
-        <img src="../../../assets/images/web.svg" class="rounded-md" />
-        <div class=" flex flex-col justify-center items-center pt-2">
-          <p class="text-[#7A868C] text-1xl">
+      <!-- Cards Section -->
+      <div class="flex flex-wrap justify-center py-8 gap-6">
+        <!-- Card 1: Heart Health Education -->
+        <div
+          class="bg-white rounded-md shadow-md p-4 flex flex-col items-center w-[90%] sm:w-[45%] lg:w-[30%] max-w-[300px]">
+          <img src="../../../assets/images/web.svg" alt="Heart Health Education"
+            class="rounded-md object-contain w-full" />
+          <p class="text-[#7A868C] text-center text-lg font-medium pt-3">
             Heart Health Education
           </p>
         </div>
-      </div>
-      <!-- diabetes education -->
-      <div class="bg-white rounded-md">
-        <img src="../../../assets/images/mobile.svg" class="rounded-md" />
-        <div class=" flex flex-col justify-center items-center pt-2">
-          <p class="text-[#7A868C] text-1xl">
+
+        <!-- Card 2: Diabetes Education -->
+        <div
+          class="bg-white rounded-md shadow-md p-4 flex flex-col items-center w-[90%] sm:w-[45%] lg:w-[30%] max-w-[300px]">
+          <img src="../../../assets/images/mobile.svg" alt="Diabetes Education"
+            class="rounded-md object-contain w-full" />
+          <p class="text-[#7A868C] text-center text-lg font-medium pt-3">
             Diabetes Education
           </p>
-
         </div>
-      </div>
-      <!-- diabetes self-management education -->
-      <div class="bg-white rounded-md">
-        <img src="../../../assets/images/social_media.svg" class="rounded-md" />
-        <div class=" flex flex-col justify-center items-center pt-2">
-          <p class="text-[#7A868C] text-1xl">
-            Diabetes  Self-Management  Education
+
+        <!-- Card 3: Diabetes Self-Management Education -->
+        <div
+          class="bg-white rounded-md shadow-md p-4 flex flex-col items-center w-[90%] sm:w-[45%] lg:w-[30%] max-w-[300px]">
+          <img src="../../../assets/images/social_media.svg" alt="Diabetes Self-Management Education"
+            class="rounded-md object-contain w-full" />
+          <p class="text-[#7A868C] text-center text-lg font-medium pt-3">
+            Diabetes Self-Management Education
           </p>
         </div>
       </div>
@@ -166,51 +163,60 @@
   <!-- end explore content -->
 
   <!-- start Custom Websites -->
-  <div>
+  <div class="bg-gray-100 py-10">
     <div class="container mx-auto">
-      <span class="flex justify-center text-black font-medium text-5xl pt-5 pl-1 gap-2">Explore
-        <span class="bg-gradient-to-r from-[#0471A6] to-[#92CD91] bg-clip-text text-transparent">
-          Custom Websites
+      <!-- Title Section -->
+      <div>
+        <span class="flex flex-wrap justify-center text-black font-medium text-4xl md:text-5xl pt-5 gap-2 text-center">
+          Explore
+          <span class="bg-gradient-to-r from-[#0471A6] to-[#92CD91] bg-clip-text text-transparent">
+            Custom Websites
+          </span>
         </span>
-      </span>
-    </div>
-
-    <div class="flex flex-rpw justify-center py-6 gap-4 w-full">
-      <!-- Medical Practices & Hospitals -->
-      <div
-        class="bg-white rounded-md border-spacing-1 border border-[#8DCAE2] flex flex-col justify-center items-center px-6 py-5">
-        <img src="../../../assets/images/Medical Practices  & Hospitals.svg" class="rounded-md p-4" />
-        <div class="py-7 text-center mx-auto max-w-4xl space-y-6 text-gray-800">
-          <p class="text-xl font-bold leading-relaxed">
-            Medical Practices
-            <br />
-            & Hospitals
-          </p>
-        </div>
       </div>
-      <!-- Specialized Clinics & Centers -->
-      <div
-        class="bg-white rounded-md border-spacing-1 border border-[#8DCAE2] flex flex-col justify-center items-center px-6 py-5">
-        <img src="../../../assets/images/Specialized Clinics  & Centers.svg" class="rounded-md p-4" />
-        <div class="py-7 text-center mx-auto max-w-4xl space-y-6 text-gray-800">
-          <p class="text-xl font-bold leading-relaxed">
-            Specialized Clinics
-            <br />
-            & Centers
-          </p>
 
+      <!-- Cards Section -->
+      <div class="flex flex-wrap justify-center py-8 gap-6 w-full">
+        <!-- Card 1: Medical Practices & Hospitals -->
+        <div
+          class="bg-white rounded-md border border-[#8DCAE2] flex flex-col justify-center items-center px-6 py-5 w-[90%] sm:w-[45%] lg:w-[30%] max-w-[350px]">
+          <img src="../../../assets/images/Medical-Practices-Hospitals.svg" alt="Medical Practices & Hospitals"
+            class="rounded-md p-4 w-full object-contain" />
+          <div class="py-5 text-center text-gray-800">
+            <p class="text-lg md:text-xl font-bold leading-relaxed">
+              Medical Practices
+              <br />
+              & Hospitals
+            </p>
+          </div>
         </div>
-      </div>
-      <!-- Surgical & Procedure Facilities -->
-      <div
-        class="bg-white rounded-md border-spacing-1 border border-[#8DCAE2] flex flex-col justify-center items-center px-6 py-5">
-        <img src="../../../assets/images/Surgical & Procedure  Facilities.svg" class="rounded-md p-4" />
-        <div class="py-7 text-center mx-auto max-w-4xl space-y-6 text-gray-800">
-          <p class="text-xl font-bold leading-relaxed">
-            Surgical & Procedure
-            <br />
-            Facilities
-          </p>
+
+        <!-- Card 2: Specialized Clinics & Centers -->
+        <div
+          class="bg-white rounded-md border border-[#8DCAE2] flex flex-col justify-center items-center px-6 py-5 w-[90%] sm:w-[45%] lg:w-[30%] max-w-[350px]">
+          <img src="../../../assets/images/Specialized-Clinics-Centers.svg" alt="Specialized Clinics & Centers"
+            class="rounded-md p-4 w-full object-contain" />
+          <div class="py-5 text-center text-gray-800">
+            <p class="text-lg md:text-xl font-bold leading-relaxed">
+              Specialized Clinics
+              <br />
+              & Centers
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 3: Surgical & Procedure Facilities -->
+        <div
+          class="bg-white rounded-md border border-[#8DCAE2] flex flex-col justify-center items-center px-6 py-5 w-[90%] sm:w-[45%] lg:w-[30%] max-w-[350px]">
+          <img src="../../../assets/images/Surgical-Procedure-Facilities.svg" alt="Surgical & Procedure Facilities"
+            class="rounded-md p-4 w-full object-contain" />
+          <div class="py-5 text-center text-gray-800">
+            <p class="text-lg md:text-xl font-bold leading-relaxed">
+              Surgical & Procedure
+              <br />
+              Facilities
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -218,45 +224,54 @@
   <!-- end Custom Websites -->
 
   <!-- start Resources For Clinicians -->
-  <div>
+  <div class="bg-gray-50 py-10">
     <div class="container mx-auto">
-      <span class="flex justify-center text-black font-medium text-5xl pt-5 pl-1 gap-2">Resources For
-        <span class="bg-gradient-to-r from-[#0471A6] to-[#92CD91] bg-clip-text text-transparent">
-          Clinicians
+      <!-- Title Section -->
+      <div>
+        <span class="flex flex-wrap justify-center text-black font-medium text-4xl md:text-5xl pt-5 gap-2 text-center">
+          Resources For
+          <span class="bg-gradient-to-r from-[#0471A6] to-[#92CD91] bg-clip-text text-transparent">
+            Clinicians
+          </span>
         </span>
-      </span>
-    </div>
-
-    <div class="flex flex-rpw justify-center py-6 gap-4 w-full">
-      <!-- Customize Website -->
-      <div
-        class="bg-white rounded-md border-spacing-1 border border-[#8DCAE2] flex flex-col justify-center items-center px-6 py-5">
-        <img src="../../../assets/images/Customize Website.svg" class="rounded-md p-4" />
-        <div class="py-7 text-center mx-auto max-w-4xl space-y-6 text-gray-800">
-          <p class="text-xl font-bold leading-relaxed">
-            Customize Website
-          </p>
-        </div>
       </div>
-      <!-- Download QR Sheets -->
-      <div
-        class="bg-white rounded-md border-spacing-1 border border-[#8DCAE2] flex flex-col justify-center items-center px-6 py-5">
-        <img src="../../../assets/images/Download QR Sheets.svg" class="rounded-md p-4" />
-        <div class="py-7 text-center mx-auto max-w-4xl space-y-6 text-gray-800">
-          <p class="text-xl font-bold leading-relaxed">
-            Download QR Sheets
-          </p>
 
+      <!-- Cards Section -->
+      <div class="flex flex-wrap justify-center py-8 gap-6 w-full">
+        <!-- Card 1: Customize Website -->
+        <div
+          class="bg-white rounded-md border border-[#8DCAE2] flex flex-col justify-center items-center px-6 py-5 w-[90%] sm:w-[45%] lg:w-[30%] max-w-[350px]">
+          <img src="../../../assets/images/Customize Website.svg" alt="Customize Website"
+            class="rounded-md p-4 w-full object-contain" />
+          <div class="py-5 text-center text-gray-800">
+            <p class="text-lg md:text-xl font-bold leading-relaxed">
+              Customize Website
+            </p>
+          </div>
         </div>
-      </div>
-      <!-- Download Mobile App -->
-      <div
-        class="bg-white rounded-md border-spacing-1 border border-[#8DCAE2] flex flex-col justify-center items-center px-6 py-5">
-        <img src="../../../assets/images/Download Mobile App.svg" class="rounded-md p-4" />
-        <div class="py-7 text-center mx-auto max-w-4xl space-y-6 text-gray-800">
-          <p class="text-xl font-bold leading-relaxed">
-            Download Mobile App
-          </p>
+
+        <!-- Card 2: Download QR Sheets -->
+        <div
+          class="bg-white rounded-md border border-[#8DCAE2] flex flex-col justify-center items-center px-6 py-5 w-[90%] sm:w-[45%] lg:w-[30%] max-w-[350px]">
+          <img src="../../../assets/images/Download QR Sheets.svg" alt="Download QR Sheets"
+            class="rounded-md p-4 w-full object-contain" />
+          <div class="py-5 text-center text-gray-800">
+            <p class="text-lg md:text-xl font-bold leading-relaxed">
+              Download QR Sheets
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 3: Download Mobile App -->
+        <div
+          class="bg-white rounded-md border border-[#8DCAE2] flex flex-col justify-center items-center px-6 py-5 w-[90%] sm:w-[45%] lg:w-[30%] max-w-[350px]">
+          <img src="../../../assets/images/Download Mobile App.svg" alt="Download Mobile App"
+            class="rounded-md p-4 w-full object-contain" />
+          <div class="py-5 text-center text-gray-800">
+            <p class="text-lg md:text-xl font-bold leading-relaxed">
+              Download Mobile App
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -265,11 +280,13 @@
 </section>
 
 <!-- start count -->
-<section class="bg-[#0471A6]">
+<section class="bg-[#0471A6] py-10">
   <div class="container mx-auto">
-    <div class="p-5 flex gap-3">
-      <div class="flex flex-col bg-white rounded-xl p-7 text-center mx-auto  space-y-6 text-gray-800">
-        <span class="font-bold text-5xl bg-gradient-to-r from-[#0471A6] to-[#92CD91] bg-clip-text text-transparent ">
+    <div class="p-5 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 text-gray-800">
+      <!-- Card 1 -->
+      <div
+        class="flex flex-col bg-white rounded-xl p-7 text-center mx-auto space-y-6 w-full max-w-[250px] h-[196px] sm:h-[196px] lg:h-[196px]">
+        <span class="font-bold text-5xl bg-gradient-to-r from-[#0471A6] to-[#92CD91] bg-clip-text text-transparent">
           100K+
         </span>
         <span class="text-xl font-semibold leading-relaxed">
@@ -279,8 +296,10 @@
         </span>
       </div>
 
-      <div class="flex flex-col bg-white rounded-xl p-7 text-center mx-auto  space-y-6 text-gray-800">
-        <span class="font-bold text-5xl bg-gradient-to-r from-[#0471A6] to-[#92CD91] bg-clip-text text-transparent ">
+      <!-- Card 2 -->
+      <div
+        class="flex flex-col bg-white rounded-xl p-7 text-center mx-auto space-y-6 w-full max-w-[250px] h-[196px] sm:h-[196px] lg:h-[196px]">
+        <span class="font-bold text-5xl bg-gradient-to-r from-[#0471A6] to-[#92CD91] bg-clip-text text-transparent">
           1M+
         </span>
         <span class="text-xl font-semibold leading-relaxed">
@@ -290,8 +309,10 @@
         </span>
       </div>
 
-      <div class="flex flex-col bg-white rounded-xl p-7 text-center mx-auto  space-y-6 text-gray-800">
-        <span class="font-bold text-5xl bg-gradient-to-r from-[#0471A6] to-[#92CD91] bg-clip-text text-transparent ">
+      <!-- Card 3 -->
+      <div
+        class="flex flex-col bg-white rounded-xl p-7 text-center mx-auto space-y-6 w-full max-w-[250px] h-[196px] sm:h-[196px] lg:h-[196px]">
+        <span class="font-bold text-5xl bg-gradient-to-r from-[#0471A6] to-[#92CD91] bg-clip-text text-transparent">
           100+
         </span>
         <span class="text-xl font-semibold leading-relaxed">
@@ -301,8 +322,10 @@
         </span>
       </div>
 
-      <div class="flex flex-col bg-white rounded-xl p-7 text-center mx-auto  space-y-6 text-gray-800">
-        <span class="font-bold text-5xl bg-gradient-to-r from-[#0471A6] to-[#92CD91] bg-clip-text text-transparent ">
+      <!-- Card 4 -->
+      <div
+        class="flex flex-col bg-white rounded-xl p-7 text-center mx-auto space-y-6 w-full max-w-[250px] h-[196px] sm:h-[196px] lg:h-[196px]">
+        <span class="font-bold text-5xl bg-gradient-to-r from-[#0471A6] to-[#92CD91] bg-clip-text text-transparent">
           500+
         </span>
         <span class="text-xl font-semibold leading-relaxed">
@@ -312,8 +335,10 @@
         </span>
       </div>
 
-      <div class="flex flex-col bg-white rounded-xl p-7 text-center mx-auto max-w-4xl space-y-6 text-gray-800">
-        <span class="font-bold text-5xl bg-gradient-to-r from-[#0471A6] to-[#92CD91] bg-clip-text text-transparent ">
+      <!-- Card 5 -->
+      <div
+        class="flex flex-col bg-white rounded-xl p-7 text-center mx-auto space-y-6 w-full max-w-[250px] h-[196px] sm:h-[196px] lg:h-[196px]">
+        <span class="font-bold text-5xl bg-gradient-to-r from-[#0471A6] to-[#92CD91] bg-clip-text text-transparent">
           700K+
         </span>
         <span class="text-xl font-semibold leading-relaxed">
@@ -324,6 +349,299 @@
       </div>
     </div>
   </div>
-
 </section>
 <!-- end count -->
+
+<!-- start trusted content -->
+<section class="bg-[#ECF9FF]">
+  <div class="container mx-auto h-full px-4 sm:px-6 md:px-8">
+
+    <!-- Title Section -->
+    <span class="flex justify-center text-black font-medium text-5xl pt-5 pl-1 gap-2">
+      Trusted
+      <span class="bg-gradient-to-r from-[#0471A6] to-[#92CD91] bg-clip-text text-transparent">
+        Content
+      </span>
+    </span>
+    <p class="text-xl font-bold leading-relaxed flex justify-center pt-2">
+      Created by leading clinician experts and collaborators
+    </p>
+
+    <!-- Logos Carousel Section -->
+    <div class="swiper pt-5">
+      <div class="swiper-wrapper flex items-center">
+        @for (collaborator of collaborators; track $index) {
+        <div class="swiper-slide flex items-center justify-center">
+          <img [src]="collaborator.image" [alt]="collaborator.name" class="h-auto max-w-full" />
+        </div>
+        }
+      </div>
+
+      <div class="swiper-pagination max-sm:hidden"></div>
+      <div class="swiper-button-prev max-sm:hidden"></div>
+      <div class="swiper-button-next max-sm:hidden"></div>
+    </div>
+
+    <!-- Expert Carousel Section -->
+    <div class="swiper pt-5">
+      <div class="swiper-wrapper flex items-center h-auto">
+        @for (expert of experts; track $index) {
+        <div class="swiper-slide bg-white h-auto rounded-md">
+          <img [src]="expert.image" [alt]="expert.name" class="rounded-t-md items-center w-full justify-center" />
+          <div class="p-4">
+            <p class="text-base font-bold">{{ expert.name }}</p>
+            <p class="text-[#7A868C]">{{ expert.description }}</p>
+          </div>
+        </div>
+        }
+      </div>
+
+      <!-- Pagination -->
+      <div class="swiper-pagination pt-4 custom-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+</section>
+<!-- end trusted content -->
+
+<!--start Key Users and Partners -->
+<section class="bg-[#ECF9FF]">
+  <div class="container mx-auto">
+    <span class="flex justify-center text-black font-medium text-5xl pt-5 pl-1 gap-2">Key
+      <span class="bg-gradient-to-r from-[#0471A6] to-[#92CD91] bg-clip-text text-transparent">
+        Users and Partners
+      </span>
+    </span>
+    <p class="text-xl font-bold leading-relaxed flex justify-center">
+      Include world-class institutions
+    </p>
+
+    <div class="swiper pt-5">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper flex items-center">
+        <!-- Slides -->
+        @for (logo of logos; track $index) {
+        <div class="swiper-slide h-full flex justify-center items-center"><img [src]="logo.src" [alt]="logo.alt" />
+        </div>
+        }
+      </div>
+      <!-- If we need pagination -->
+
+      <!-- If we need navigation buttons -->
+      <div class="pt-10">
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--end Key Users and Partners -->
+
+<section>
+  <!-- start social feed -->
+  <div class="container mx-auto">
+    <div>
+      <div>
+        <span class="flex justify-start text-black font-medium text-5xl pt-5 pl-1 gap-2">Our
+          <span class="bg-gradient-to-r from-[#0471A6] to-[#92CD91] bg-clip-text text-transparent">
+            Social Feeds
+          </span>
+        </span>
+
+        <div class="container mx-auto px-4 pt-6">
+          <!-- Cards Container -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Card 1 -->
+            <div class="card bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300">
+              <img src="../../../assets/images/TDE 1.png" alt="Texas Diabetes Logo" class="w-full rounded-t-lg" />
+              <div class="p-4">
+                <p class="text-lg font-semibold">Advice HD Grid Catheter</p>
+                <p class="text-sm text-gray-500 mt-1">Instagram</p>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300">
+              <img src="../../../assets/images/TDE 1.png" alt="Texas Diabetes Logo" class="w-full rounded-t-lg" />
+              <div class="p-4">
+                <p class="text-lg font-semibold">Advice HD Grid Catheter</p>
+                <p class="text-sm text-gray-500 mt-1">YouTube</p>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300">
+              <img src="../../../assets/images/TDE 1.png" alt="Texas Diabetes Logo" class="w-full rounded-t-lg" />
+              <div class="p-4">
+                <p class="text-lg font-semibold">Advice HD Grid Catheter</p>
+                <p class="text-sm text-gray-500 mt-1">LinkedIn</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- "View More" Button -->
+          <div class="text-right mt-6">
+            <a href="#" class="text-blue-600 font-semibold text-lg hover:text-blue-800 transition duration-300">
+              View More →
+            </a>
+          </div>
+        </div>
+
+      </div>
+      <div>
+      </div>
+    </div>
+    <!-- end social feed -->
+
+    <!-- start Healthcare Insights -->
+    <div class="container mx-auto px-4 py-8">
+      <!-- Section Header -->
+      <span class="flex justify-start text-black font-medium text-5xl pt-5 pl-1 gap-2">Healthcare
+        <span class="bg-gradient-to-r from-[#0471A6] to-[#92CD91] bg-clip-text text-transparent">
+          Insights
+        </span>
+      </span>
+
+      <div class="flex flex-col lg:flex-row justify-between">
+        <div class="mb-6 lg:mb-0">
+          <span>
+            Read about CardioVisual Health’s success stories, stay informed with the latest news
+            <br />
+            and media updates, and explore informative blogs from our experts
+          </span>
+        </div>
+        <div class="flex justify-center space-x-4 mt-6 lg:mt-0">
+          <button
+            class="px-6 py-2 rounded-full border border-[#0471A6] bg-white text-[#0471A6] hover:bg-blue-600 transition">
+            News and Articles
+          </button>
+          <button
+            class="px-6 py-2 rounded-full border border-gray-300 bg-[#0471A6] text-white hover:border-blue-500 hover:text-blue-500 transition">
+            Blogs
+          </button>
+        </div>
+      </div>
+
+      <!-- Tabs -->
+
+      <!-- Cards Container -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+        <!-- Card -->
+        <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300">
+          <img src="../../../assets/images/12 1.png" alt="Healthcare" class="w-full h-48 object-cover rounded-t-lg" />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold">
+              Successful Heart and Kidney Treatment by Dr. Michael Gibson
+            </h3>
+            <p class="text-sm text-[#7A868C] mt-2">
+              Dr. Michael Gibson, Senior Consultant Cardiology, Adult at
+              cardioVisual provided by medical visual, exemplifies this through his
+              treatment of Mr. Jack Paul.
+            </p>
+            <div class="h-[1px] w-full bg-[#D9D9D9] my-6"></div>
+            <p class="text-[#7A868C] mt-4 font-medium">Cardiac Sciences</p>
+          </div>
+        </div>
+
+        <!-- Duplicate the above card for more -->
+        <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300">
+          <img src="../../../assets/images/12 1.png" alt="Healthcare" class="w-full h-48 object-cover rounded-t-lg" />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold">
+              Successful Heart and Kidney Treatment by Dr. Michael Gibson
+            </h3>
+            <p class="text-sm text-[#7A868C] mt-2">
+              Dr. Michael Gibson, Senior Consultant Cardiology, Adult at
+              cardioVisual provided by medical visual, exemplifies this through his
+              treatment of Mr. Jack Paul.
+            </p>
+            <div class="h-[1px] w-full bg-[#D9D9D9] my-6"></div>
+            <p class="text-[#7A868C] mt-4 font-medium">Cardiac Sciences</p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300">
+          <img src="../../../assets/images/12 1.png" alt="Healthcare" class="w-full h-48 object-cover rounded-t-lg" />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold">
+              Successful Heart and Kidney Treatment by Dr. Michael Gibson
+            </h3>
+            <p class="text-sm text-[#7A868C] mt-2">
+              Dr. Michael Gibson, Senior Consultant Cardiology, Adult at
+              cardioVisual provided by medical visual, exemplifies this through his
+              treatment of Mr. Jack Paul.
+            </p>
+            <div class="h-[1px] w-full bg-[#D9D9D9] my-6"></div>
+            <p class="text-[#7A868C] mt-4 font-medium">Cardiac Sciences</p>
+          </div>
+        </div>
+
+        <!-- More cards as needed -->
+      </div>
+    </div>
+    <!-- end Healthcare Insights -->
+
+    <!-- start Customer Reviews -->
+    <div class="container mx-auto px-4 py-8">
+      <!-- Section Header -->
+      <span class="flex justify-start text-black font-medium text-5xl pt-5 pl-1 gap-2">Customer
+        <span class="bg-gradient-to-r from-[#0471A6] to-[#92CD91] bg-clip-text text-transparent">
+          Reviews
+        </span>
+      </span>
+      <span>
+        A customer review is an evaluation of a product or service made by someone
+        <br />
+        who has purchased and used, or had experience with, a product or service.
+      </span>
+
+      <div class="flex flex-col lg:flex-row justify-between gap-4 pt-5">
+
+        <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 w-full lg:w-1/3">
+          <div class="p-4">
+            <p class="text-sm text-black mt-2">
+              Following a successful robotic gallbladder surgery with Dr. Udipta Roy at Fortis Hospital, our patient
+              recovered swiftly and resumed normal activities. The advanced technology and attentive care provided a
+              smooth
+              and reassuring experience throughout the recovery process. #Fortis #FortisKolkata #AtFortisWeCare
+              #FortisHealthcare
+            </p>
+            <p class="text-[#0471A6] mt-4 font-medium">Tom Blevins</p>
+            <p class="text-[#7A868C]">5 days ago</p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 w-full lg:w-1/3">
+          <div class="p-4">
+            <p class="text-sm text-black mt-2">
+              Following a successful robotic gallbladder surgery with Dr. Udipta Roy at Fortis Hospital, our patient
+              recovered swiftly and resumed normal activities. The advanced technology and attentive care provided a
+              smooth
+              and reassuring experience throughout the recovery process. #Fortis #FortisKolkata #AtFortisWeCare
+              #FortisHealthcare
+            </p>
+            <p class="text-[#0471A6] mt-4 font-medium">Tom Blevins</p>
+            <p class="text-[#7A868C]">5 days ago</p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 w-full lg:w-1/3">
+          <div class="p-4">
+            <p class="text-sm text-black mt-2">
+              Following a successful robotic gallbladder surgery with Dr. Udipta Roy at Fortis Hospital, our patient
+              recovered swiftly and resumed normal activities. The advanced technology and attentive care provided a
+              smooth
+              and reassuring experience throughout the recovery process. #Fortis #FortisKolkata #AtFortisWeCare
+              #FortisHealthcare
+            </p>
+            <p class="text-[#0471A6] mt-4 font-medium">Tom Blevins</p>
+            <p class="text-[#7A868C]">5 days ago</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end Customer Reviews -->
+  </div>
+</section>
