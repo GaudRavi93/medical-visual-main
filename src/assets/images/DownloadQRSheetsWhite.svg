@@ -1,0 +1,75 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group">
+<path id="Vector" d="M75 43.125H71.25V52.5H75V43.125Z" fill="#ffffff"/>
+<path id="Vector_2" d="M82.5 43.125H78.75V52.5H82.5V43.125Z" fill="#ffffff"/>
+<path id="Vector_3" d="M75 56.25H71.25V60H75V56.25Z" fill="#ffffff"/>
+<path id="Vector_4" d="M82.5 56.25H78.75V60H82.5V56.25Z" fill="#ffffff"/>
+<path id="Vector_5" d="M61.875 63.75H58.125V67.5H61.875V63.75Z" fill="#ffffff"/>
+<path id="Vector_6" d="M52.5 101.25H48.75V105H52.5V101.25Z" fill="#ffffff"/>
+<path id="Vector_7" d="M82.5 63.75H78.75V67.5H82.5V63.75Z" fill="#ffffff"/>
+<path id="Vector_8" d="M75 71.25H71.25V75H75V71.25Z" fill="#ffffff"/>
+<path id="Vector_9" d="M82.5 71.25H78.75V75H82.5V71.25Z" fill="#ffffff"/>
+<path id="Vector_10" d="M3.75 3.75H9.375V0H1.875C0.84 0 0 0.84 0 1.875V9.375H3.75V3.75Z" fill="#ffffff"/>
+<path id="Vector_11" d="M118.125 0H110.625V3.75H116.25V9.375H120V1.875C120 0.84 119.16 0 118.125 0Z" fill="#ffffff"/>
+<path id="Vector_12" d="M3.75 110.625H0V118.125C0 119.16 0.84 120 1.875 120H9.375V116.25H3.75V110.625Z" fill="#ffffff"/>
+<path id="Vector_13" d="M116.25 116.25H110.625V120H118.125C119.16 120 120 119.16 120 118.125V110.625H116.25V116.25Z" fill="#ffffff"/>
+<path id="Vector_14" d="M7.5 9.375V31.875C7.5 32.91 8.34 33.75 9.375 33.75H31.875C32.91 33.75 33.75 32.91 33.75 31.875V9.375C33.75 8.34 32.91 7.5 31.875 7.5H9.375C8.34 7.5 7.5 8.34 7.5 9.375ZM11.25 11.25H30V30H11.25V11.25Z" fill="#ffffff"/>
+<path id="Vector_15" d="M24.375 15H16.875C15.84 15 15 15.84 15 16.875V24.375C15 25.41 15.84 26.25 16.875 26.25H24.375C25.41 26.25 26.25 25.41 26.25 24.375V16.875C26.25 15.84 25.41 15 24.375 15ZM22.5 22.5H18.75V18.75H22.5V22.5Z" fill="#ffffff"/>
+<path id="Vector_16" d="M88.125 33.75H110.625C111.66 33.75 112.5 32.91 112.5 31.875V9.375C112.5 8.34 111.66 7.5 110.625 7.5H88.125C87.09 7.5 86.25 8.34 86.25 9.375V31.875C86.25 32.91 87.09 33.75 88.125 33.75ZM90 11.25H108.75V30H90V11.25Z" fill="#ffffff"/>
+<path id="Vector_17" d="M103.125 15H95.625C94.59 15 93.75 15.84 93.75 16.875V24.375C93.75 25.41 94.59 26.25 95.625 26.25H103.125C104.16 26.25 105 25.41 105 24.375V16.875C105 15.84 104.16 15 103.125 15ZM101.25 22.5H97.5V18.75H101.25V22.5Z" fill="#ffffff"/>
+<path id="Vector_18" d="M31.875 86.25H9.375C8.34 86.25 7.5 87.09 7.5 88.125V110.625C7.5 111.66 8.34 112.5 9.375 112.5H31.875C32.91 112.5 33.75 111.66 33.75 110.625V88.125C33.75 87.09 32.91 86.25 31.875 86.25ZM30 108.75H11.25V90H30V108.75Z" fill="#ffffff"/>
+<path id="Vector_19" d="M16.875 105H24.375C25.41 105 26.25 104.16 26.25 103.125V95.625C26.25 94.59 25.41 93.75 24.375 93.75H16.875C15.84 93.75 15 94.59 15 95.625V103.125C15 104.16 15.84 105 16.875 105ZM18.75 97.5H22.5V101.25H18.75V97.5Z" fill="#ffffff"/>
+<path id="Vector_20" d="M82.5 35.625H69.375V13.125H65.625V37.5C65.625 38.535 66.465 39.375 67.5 39.375H82.5V35.625Z" fill="#ffffff"/>
+<path id="Vector_21" d="M54.375 22.5H41.25V26.25H54.375V22.5Z" fill="#ffffff"/>
+<path id="Vector_22" d="M61.875 15H48.75V18.75H61.875V15Z" fill="#ffffff"/>
+<path id="Vector_23" d="M11.25 35.625H7.5V52.5H11.25V35.625Z" fill="#ffffff"/>
+<path id="Vector_24" d="M33.75 46.875H15V50.625H31.875V58.125H35.625V48.75C35.625 47.715 34.785 46.875 33.75 46.875Z" fill="#ffffff"/>
+<path id="Vector_25" d="M20.625 37.5H16.875V41.25H20.625V37.5Z" fill="#ffffff"/>
+<path id="Vector_26" d="M43.125 33.75H39.375V48.75H43.125V33.75Z" fill="#ffffff"/>
+<path id="Vector_27" d="M56.25 52.5H39.375V56.25H56.25V52.5Z" fill="#ffffff"/>
+<path id="Vector_28" d="M114.375 54.375H110.625V73.125H105V76.875H112.5C113.535 76.875 114.375 76.035 114.375 75V54.375Z" fill="#ffffff"/>
+<path id="Vector_29" d="M52.5 33.75H48.75V37.5H52.5V33.75Z" fill="#ffffff"/>
+<path id="Vector_30" d="M11.25 61.875H7.5V76.875H11.25V61.875Z" fill="#ffffff"/>
+<path id="Vector_31" d="M24.375 78.75H7.5V82.5H24.375V78.75Z" fill="#ffffff"/>
+<path id="Vector_32" d="M93.75 52.5H97.5V45C97.5 43.965 96.66 43.125 95.625 43.125H86.25V46.875H93.75V52.5Z" fill="#ffffff"/>
+<path id="Vector_33" d="M20.625 61.875H16.875V65.625H20.625V61.875Z" fill="#ffffff"/>
+<path id="Vector_34" d="M41.25 60H37.5V75H41.25V60Z" fill="#ffffff"/>
+<path id="Vector_35" d="M54.375 78.75H37.5V82.5H54.375V78.75Z" fill="#ffffff"/>
+<path id="Vector_36" d="M31.875 71.25H15V75H31.875V71.25Z" fill="#ffffff"/>
+<path id="Vector_37" d="M43.125 97.5H39.375V105H43.125V97.5Z" fill="#ffffff"/>
+<path id="Vector_38" d="M54.375 90H37.5V93.75H54.375V90Z" fill="#ffffff"/>
+<path id="Vector_39" d="M67.5 82.5V73.125C67.5 72.09 66.66 71.25 65.625 71.25H46.875V75H63.75V82.5H67.5Z" fill="#ffffff"/>
+<path id="Vector_40" d="M52.5 60H48.75V63.75H52.5V60Z" fill="#ffffff"/>
+<path id="Vector_41" d="M31.875 63.75H28.125V67.5H31.875V63.75Z" fill="#ffffff"/>
+<path id="Vector_42" d="M114.375 99.375H110.625V112.5H114.375V99.375Z" fill="#ffffff"/>
+<path id="Vector_43" d="M106.875 108.75H101.25V112.5H106.875V108.75Z" fill="#ffffff"/>
+<path id="Vector_44" d="M105 97.5H101.25V105H105V97.5Z" fill="#ffffff"/>
+<path id="Vector_45" d="M114.375 82.5C114.375 81.465 113.535 80.625 112.5 80.625H91.875V84.375H110.625V95.625H114.375V82.5Z" fill="#ffffff"/>
+<path id="Vector_46" d="M90 105V95.625C90 94.59 89.16 93.75 88.125 93.75H67.5V97.5H86.25V105H90Z" fill="#ffffff"/>
+<path id="Vector_47" d="M106.875 88.125H93.75V91.875H106.875V88.125Z" fill="#ffffff"/>
+<path id="Vector_48" d="M50.625 108.75H37.5V112.5H50.625V108.75Z" fill="#ffffff"/>
+<path id="Vector_49" d="M60 95.625H56.25V112.5H60V95.625Z" fill="#ffffff"/>
+<path id="Vector_50" d="M67.5 86.25H60V90H67.5V86.25Z" fill="#ffffff"/>
+<path id="Vector_51" d="M88.125 67.5H97.5V63.75H90V52.5H86.25V65.625C86.25 66.66 87.09 67.5 88.125 67.5Z" fill="#ffffff"/>
+<path id="Vector_52" d="M103.125 56.25H93.75V60H103.125V56.25Z" fill="#ffffff"/>
+<path id="Vector_53" d="M106.875 37.5H101.25V41.25H106.875V37.5Z" fill="#ffffff"/>
+<path id="Vector_54" d="M114.375 37.5H110.625V46.875H114.375V37.5Z" fill="#ffffff"/>
+<path id="Vector_55" d="M105 46.875H101.25V50.625H105V46.875Z" fill="#ffffff"/>
+<path id="Vector_56" d="M73.125 31.875H80.625C81.66 31.875 82.5 31.035 82.5 30V5.625H78.75V28.125H73.125V31.875Z" fill="#ffffff"/>
+<path id="Vector_57" d="M45 9.375H73.125V5.625H43.125C42.09 5.625 41.25 6.465 41.25 7.5V16.875H45V9.375Z" fill="#ffffff"/>
+<path id="Vector_58" d="M46.875 45H60C61.035 45 61.875 44.16 61.875 43.125V28.125H58.125V41.25H46.875V45Z" fill="#ffffff"/>
+<path id="Vector_59" d="M67.5 43.125H63.75V50.625H67.5V43.125Z" fill="#ffffff"/>
+<path id="Vector_60" d="M80.625 101.25H67.5V105H80.625V101.25Z" fill="#ffffff"/>
+<path id="Vector_61" d="M84.375 108.75H67.5V112.5H84.375V108.75Z" fill="#ffffff"/>
+<path id="Vector_62" d="M93.75 108.75H90V112.5H95.625C96.66 112.5 97.5 111.66 97.5 110.625V95.625H93.75V108.75Z" fill="#ffffff"/>
+<path id="Vector_63" d="M33.75 78.75H30V82.5H33.75V78.75Z" fill="#ffffff"/>
+<path id="Vector_64" d="M80.625 78.75H73.125V82.5H80.625V78.75Z" fill="#ffffff"/>
+<path id="Vector_65" d="M90 71.25H86.25V76.875H90V71.25Z" fill="#ffffff"/>
+<path id="Vector_66" d="M88.125 80.625H84.375V84.375H88.125V80.625Z" fill="#ffffff"/>
+<path id="Vector_67" d="M78.75 86.25H73.125V90H78.75V86.25Z" fill="#ffffff"/>
+<path id="Vector_68" d="M97.5 71.25H93.75V75H97.5V71.25Z" fill="#ffffff"/>
+<path id="Vector_69" d="M106.875 63.75H101.25V67.5H106.875V63.75Z" fill="#ffffff"/>
+<path id="Vector_70" d="M75 63.75H65.625V67.5H75V63.75Z" fill="#ffffff"/>
+<path id="Vector_71" d="M67.5 54.375H63.75V60H67.5V54.375Z" fill="#ffffff"/>
+</g>
+</svg>
