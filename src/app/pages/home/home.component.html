@@ -75,7 +75,8 @@
       </h3>
       <div class="grid sm:grid-cols-12 gap-4">
         @for (digitalSolutions of digitalSolutionsData; track $index) {
-        <div class="bg-white md:rounded-[16px] rounded-[12px] w-full md:col-span-4 sm:col-span-6">
+        <div class="bg-white md:rounded-[16px] rounded-[12px] w-full md:col-span-4 sm:col-span-6"
+          (click)="redirect(digitalSolutions.link)">
           <img [src]="digitalSolutions.imageSrc" [alt]="digitalSolutions.alt"
             class="md:rounded-t-[16px] rounded-t-[12px] w-full object-contain max-h-[300px]" />
           <div class="flex flex-col justify-center items-center md:pt-4 pt-2 md:pb-6 pb-2">
@@ -102,46 +103,24 @@
           Explore
           <span class="bg-gradient-to-r from-[#0471A6] to-[#92CD91] bg-clip-text text-transparent"> Content </span>
         </div>
-
         <!-- Cards Section -->
         <div class="grid sm:grid-cols-12 gap-4">
-          <!-- Card 1: Heart Health Education -->
-          <div
+          @for(details of contentData; track $index){
+          <div (click)="redirect(details.link)"
             class="bg-white md:rounded-[16px] rounded-[12px] overflow-hidden flex flex-col items-center relative md:col-span-4 sm:col-span-6">
-            <img src="../../../assets/images/explore-content-1.png" alt="Heart Health Education"
-              class="object-cover w-full h-[340px]" />
+            <img [src]="details.image" alt="Heart Health Education" class="object-cover w-full h-[340px]" />
             <p
               class="text-white text-center md:text-[26px] text-[20px] font-medium pt-3 absolute bottom-4 left-0 w-full flex justify-center z-10">
-              Heart Health Education
+              {{details.title}}
             </p>
             <div class="h-full w-full absolute bottom-0 left-0 bg-gradient-to-b from-[#fff0] to-[#000]"></div>
           </div>
-          <!-- Card 2: Diabetes Education -->
-          <div
-            class="bg-white md:rounded-[16px] rounded-[12px] overflow-hidden flex flex-col items-center relative md:col-span-4 sm:col-span-6">
-            <img src="../../../assets/images/explore-content-2.png" alt="Diabetes Education"
-              class="object-cover w-full h-[340px]" />
-            <p
-              class="text-white text-center md:text-[26px] text-[20px] font-medium pt-3 absolute bottom-4 left-0 w-full flex justify-center z-10">
-              Diabetes Education
-            </p>
-            <div class="h-full w-full absolute bottom-0 left-0 bg-gradient-to-b from-[#fff0] to-[#000]"></div>
-          </div>
-          <!-- Card 3: Diabetes Self-Management Education -->
-          <div
-            class="bg-white md:rounded-[16px] rounded-[12px] overflow-hidden flex flex-col items-center relative md:col-span-4 sm:col-span-6 sm:col-start-4">
-            <img src="../../../assets/images/explore-content-3.png" alt="Diabetes Self-Management Education"
-              class="object-cover w-full h-[340px]" />
-            <p
-              class="text-white text-center md:text-[26px] text-[20px] font-medium pt-3 absolute bottom-4 left-0 w-full flex justify-center z-10 md:px-10 px-5">
-              Diabetes <br class="max-sm:hidden" />
-              Self-Management Education
-            </p>
-            <div class="h-full w-full absolute bottom-0 left-0 bg-gradient-to-b from-[#fff0] to-[#000]"></div>
-          </div>
+          }
         </div>
       </div>
       <!-- end explore content -->
+
+
       <!-- start Custom Websites -->
       <div class="flex flex-col lg:gap-[48px] md:gap-[36px] gap-[30px]">
         <div class="flex flex-wrap justify-center text-black font-medium text-4xl md:text-5xl pt-5 gap-2 text-center">
@@ -151,54 +130,28 @@
           </span>
         </div>
         <!-- Cards Section -->
-
         <div class="grid sm:grid-cols-12 gap-4">
-          <div
+          @for(details of customWebsiteContent; track $index){
+          <div (click)="redirect(details.link)"
             class="group cursor-pointer md:col-span-4 sm:col-span-6 bg-white hover:bg-gradient-to-r from-[#0471A6] to-[#92CD91] md:rounded-[16px] rounded-[12px] border border-[#8DCAE2] flex flex-col justify-center items-center md:px-6 px-2 md:py-5 py-3">
-            <img src="../../../assets/images/Medical-Practices-Hospitals.svg" alt="Medical Practices & Hospitals"
+            <img [src]="details.image" alt="img"
               class="md:pt-[52px] pt-[40px] md:pb-[60px] pb-[40px] group-hover:hidden" />
-            <img src="../../../assets/images/Medical-Practices-HospitalsWhite.svg" alt="Medical Practices & Hospitals"
+            <img [src]="details.hoverImage" alt="img"
               class="md:pt-[52px] pt-[40px] md:pb-[60px] pb-[40px] group-hover:block hidden" />
             <div class="py-5 text-center text-gray-800 group-hover:text-white">
               <p class="text-lg md:text-2xl font-bold">
-                Medical Practices
+                {{details.title}}
                 <br class="max-sm:hidden" />
-                & Hospitals
+                {{details.altText}}
               </p>
             </div>
           </div>
-          <div
-            class="group cursor-pointer md:col-span-4 sm:col-span-6 bg-white hover:bg-gradient-to-r from-[#0471A6] to-[#92CD91] md:rounded-[16px] rounded-[12px] border border-[#8DCAE2] flex flex-col justify-center items-center md:px-6 px-2 md:py-5 py-3">
-            <img src="../../../assets/images/Specialized-Clinics-Centers.svg" alt="Specialized Clinics & Centers"
-              class="md:pt-[52px] pt-[40px] md:pb-[60px] pb-[40px] group-hover:hidden" />
-            <img src="../../../assets/images/Specialized-Clinics-CentersWhite.svg" alt="Specialized Clinics & Centers"
-              class="md:pt-[52px] pt-[40px] md:pb-[60px] pb-[40px] group-hover:block hidden" />
-            <div class="py-5 text-center text-gray-800 group-hover:text-white">
-              <p class="text-lg md:text-2xl font-bold">
-                Specialized Clinics
-                <br class="max-sm:hidden" />
-                & Centers
-              </p>
-            </div>
-          </div>
-          <div
-            class="group cursor-pointer md:col-span-4 sm:col-span-6 sm:col-start-4 bg-white hover:bg-gradient-to-r from-[#0471A6] to-[#92CD91] md:rounded-[16px] rounded-[12px] border border-[#8DCAE2] flex flex-col justify-center items-center md:px-6 px-2 md:py-5 py-3">
-            <img src="../../../assets/images/Surgical-Procedure-Facilities.svg" alt="Surgical & Procedure Facilities"
-              class="md:pt-[52px] pt-[40px] md:pb-[60px] pb-[40px] group-hover:hidden" />
-            <img src="../../../assets/images/Surgical-Procedure-FacilitiesWhite.svg"
-              alt="Surgical & Procedure Facilities 12"
-              class="md:pt-[52px] pt-[40px] md:pb-[60px] pb-[40px] group-hover:block hidden" />
-            <div class="py-5 text-center text-gray-800 group-hover:text-white">
-              <p class="text-lg md:text-2xl font-bold">
-                Surgical & Procedure
-                <br class="max-sm:hidden" />
-                Facilities
-              </p>
-            </div>
-          </div>
+          }
         </div>
       </div>
       <!-- end Custom Websites -->
+
+
       <!-- start Resources For Clinicians -->
       <div class="flex flex-col lg:gap-[48px] md:gap-[36px] gap-[30px]">
         <div class="flex flex-wrap justify-center text-black font-medium text-4xl md:text-5xl pt-5 gap-2 text-center">
@@ -207,36 +160,18 @@
         </div>
         <!-- Cards Section -->
         <div class="grid sm:grid-cols-12 gap-4">
-          <div
+          @for(details of clinicalResources; track $index){
+          <div (click)="redirect(details.link)"
             class="group cursor-pointer md:col-span-4 sm:col-span-6 bg-white hover:bg-gradient-to-r from-[#0471A6] to-[#92CD91] md:rounded-[16px] rounded-[12px] border border-[#8DCAE2] flex flex-col justify-center items-center md:px-6 px-2 md:py-5 py-3">
-            <img src="../../../assets/images/CustomizeWebsite.svg" alt="Medical Practices & Hospitals"
+            <img [src]="details.image" alt="Medical Practices & Hospitals"
               class="md:pt-[52px] pt-[40px] md:pb-[60px] pb-[40px] group-hover:hidden" />
-            <img src="../../../assets/images/CustomizeWebsiteWhite.svg" alt="Medical Practices & Hospitals"
+            <img [src]="details.hoverImage" alt="Medical Practices & Hospitals"
               class="md:pt-[52px] pt-[40px] md:pb-[60px] pb-[40px] group-hover:block hidden" />
             <div class="py-5 text-center text-gray-800 group-hover:text-white">
-              <p class="text-lg md:text-2xl font-bold">Customize Website</p>
+              <p class="text-lg md:text-2xl font-bold">{{details.title}}</p>
             </div>
           </div>
-          <div
-            class="group cursor-pointer md:col-span-4 sm:col-span-6 bg-white hover:bg-gradient-to-r from-[#0471A6] to-[#92CD91] md:rounded-[16px] rounded-[12px] border border-[#8DCAE2] flex flex-col justify-center items-center md:px-6 px-2 md:py-5 py-3">
-            <img src="../../../assets/images/DownloadQRSheets.svg" alt="Specialized Clinics & Centers"
-              class="md:pt-[52px] pt-[40px] md:pb-[60px] pb-[40px] group-hover:hidden" />
-            <img src="../../../assets/images/DownloadQRSheetsWhite.svg" alt="Specialized Clinics & Centers"
-              class="md:pt-[52px] pt-[40px] md:pb-[60px] pb-[40px] group-hover:block hidden" />
-            <div class="py-5 text-center text-gray-800 group-hover:text-white">
-              <p class="text-lg md:text-2xl font-bold">Download QR Sheets</p>
-            </div>
-          </div>
-          <div
-            class="group cursor-pointer md:col-span-4 sm:col-span-6 sm:col-start-4 bg-white hover:bg-gradient-to-r from-[#0471A6] to-[#92CD91] md:rounded-[16px] rounded-[12px] border border-[#8DCAE2] flex flex-col justify-center items-center md:px-6 px-2 md:py-5 py-3">
-            <img src="../../../assets/images/DownloadMobileApp.svg" alt="Surgical & Procedure Facilities"
-              class="md:pt-[52px] pt-[40px] md:pb-[60px] pb-[40px] group-hover:hidden" />
-            <img src="../../../assets/images/DownloadMobileAppWhite.svg" alt="Surgical & Procedure Facilities 12"
-              class="md:pt-[52px] pt-[40px] md:pb-[60px] pb-[40px] group-hover:block hidden" />
-            <div class="py-5 text-center text-gray-800 group-hover:text-white">
-              <p class="text-lg md:text-2xl font-bold">Download Mobile App</p>
-            </div>
-          </div>
+          }
         </div>
       </div>
       <!-- end Resources For Clinicians -->

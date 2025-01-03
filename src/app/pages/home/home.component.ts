@@ -4,9 +4,10 @@ import { Pagination, Navigation } from 'swiper/modules';
 import { SwiperOptions } from 'swiper/types';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDialog } from '@angular/material/dialog';
+import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-home',
-  imports: [MatIconModule],
+  imports: [MatIconModule, CommonModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
@@ -354,6 +355,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
       title1: 'For clinics &',
       title2: 'provider systems',
       subtitle: 'Custom Website',
+      link: 'https://medicalvisual.com/',
       // description: 'For clinics & provider systems',
     },
     {
@@ -362,6 +364,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
       title1: 'For on-the-go',
       title2: 'clinicians',
       subtitle: 'Mobile App',
+      link: 'https://cardiovisual.com/',
       // description: 'For on-the-go clinicians',
     },
     {
@@ -370,12 +373,75 @@ export class HomeComponent implements OnInit, AfterViewInit {
       title1: 'For everyday',
       title2: 'learning',
       subtitle: 'Social Media',
+      link: 'https://linktr.ee/MedicalVisualSocials',
       // description: 'For everyday learning',
     },
   ];
   youtubVideoContent: any = null;
   selectedReview: any = null;
 
+  contentData = [
+    {
+      title: 'Heart Health Education',
+      link: 'https://heart.medicalvisual.com',
+      image: '../../../assets/images/explore-content-1.png',
+    },
+    {
+      title: 'Diabetes Education',
+      link: 'https://diabetes.medicalvisual.com/',
+      image: '../../../assets/images/explore-content-2.png',
+    },
+    {
+      title: 'Diabetes Self-Management Education',
+      link: 'https://diabetes.medicalvisual.com/clinicians-learning',
+      image: '../../../assets/images/explore-content-3.png',
+    },
+  ];
+
+  customWebsiteContent = [
+    {
+      title: 'Medical Practices',
+      image: '../../../assets/images/Medical-Practices-Hospitals.svg',
+      hoverImage: '../../../assets/images/Medical-Practices-HospitalsWhite.svg',
+      altText: '& Hospitals',
+      link: 'https://tca.medicalvisual.com/',
+    },
+    {
+      title: 'Specialized Clinics',
+      image: '../../../assets/images/Specialized-Clinics-Centers.svg',
+      hoverImage: '../../../assets/images/Specialized-Clinics-CentersWhite.svg',
+      altText: '& Centers',
+      link: 'https://cardiacrehab.medicalvisual.com/',
+    },
+    {
+      title: 'Surgical & Procedure',
+      image: '../../../assets/images/Surgical-Procedure-Facilities.svg',
+      hoverImage: '../../../assets/images/Surgical-Procedure-FacilitiesWhite.svg',
+      altText: 'Facilities',
+      link: 'https://cathlab.medicalvisual.com/',
+    },
+  ];
+
+  clinicalResources = [
+    {
+      title: 'Customize Website',
+      image: '../../../assets/images/CustomizeWebsite.svg',
+      hoverImage: '../../../assets/images/CustomizeWebsiteWhite.svg',
+      link: 'https://medicalvisual.com/',
+    },
+    {
+      title: 'Download QR Sheets',
+      image: '../../../assets/images/DownloadQRSheets.svg',
+      hoverImage: '../../../assets/images/DownloadQRSheetsWhite.svg',
+      link: '',
+    },
+    {
+      title: 'Download Mobile App',
+      image: '../../../assets/images/DownloadMobileApp.svg',
+      hoverImage: '../../../assets/images/DownloadMobileAppWhite.svg',
+      link: 'https://cardiovisual.com/',
+    },
+  ];
   constructor(private dialog: MatDialog) {}
 
   ngOnInit() {
@@ -415,5 +481,12 @@ export class HomeComponent implements OnInit, AfterViewInit {
   closeDialog(): void {
     this.dialog.closeAll();
     this.selectedReview = null;
+  }
+  redirect(url: string) {
+    if (!url) {
+      console.log('no url');
+    } else {
+      window.open(url, '_blank');
+    }
   }
 }
