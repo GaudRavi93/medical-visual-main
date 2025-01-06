@@ -21,7 +21,7 @@
 <!-- end intro -->
 
 <!-- start searchbox -->
-<section class="-mt-[36px] relative z-20">
+<!-- <section class="-mt-[36px] relative z-20">
   <div class="container mx-auto">
     <div class="flex justify-center">
       <div class="lg:w-[75%] md:w-[80%] w-full mx-auto relative">
@@ -31,7 +31,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- end searchbox -->
 
 <!-- start description -->
@@ -177,31 +177,6 @@
   </div>
 </section>
 
-<!-- start count -->
-<section class="bg-[#0471A6] py-[50px] relative">
-  <div class="absolute bottom-0 left-0">
-    <img src="../../../assets/images/number-bg.png" class="w-full" />
-  </div>
-  <div class="container mx-auto">
-    <div class="grid gap-3 sm:grid-cols-12 lg:grid-cols-12 xl:grid-cols-5 text-gray-800">
-      @for (status of statsData; track $index) {
-      <div
-        class="max-xl:col-span-4 max-md:col-span-6 w-full flex flex-col bg-white md:rounded-[16px] rounded-[12px] p-7 text-center mx-auto space-y-6 h-[196px] sm:h-[196px] lg:h-[196px]">
-        <span class="font-bold text-5xl bg-gradient-to-r from-[#0471A6] to-[#92CD91] bg-clip-text text-transparent">
-          {{status.value}}
-        </span>
-        <span class="text-xl font-semibold leading-relaxed">
-          {{status.label}}
-          <br />
-          {{status.description}}
-        </span>
-      </div>
-      }
-    </div>
-  </div>
-</section>
-<!-- end count -->
-
 <!-- start trusted content & Key Users and Partners -->
 <section class="bg-[#ECF9FF] lg:py-[80px] md:py-[60px] py-[40px]">
   <div class="container mx-auto h-full px-4 sm:px-6 md:px-8">
@@ -239,6 +214,7 @@
             class="md:rounded-t-[16px] rounded-t-[12px] items-center w-full h-[212px] object-cover justify-center" />
           <div class="p-4">
             <p class="text-base font-bold">{{ expert.name }}</p>
+            <p class="text-base font-bold">{{ expert.role }}</p>
             <p class="text-[#7A868C] min-h-[48px]">{{ expert.description }}</p>
           </div>
         </div>
@@ -281,6 +257,31 @@
   </div>
 </section>
 <!-- end trusted content & Key Users and Partners  -->
+
+<!-- start count -->
+<section class="bg-[#0471A6] py-[50px] relative">
+  <div class="absolute bottom-0 left-0">
+    <img src="../../../assets/images/number-bg.png" class="w-full" />
+  </div>
+  <div class="container mx-auto">
+    <div class="grid gap-3 sm:grid-cols-12 lg:grid-cols-12 xl:grid-cols-5 text-gray-800">
+      @for (status of statsData; track $index) {
+      <div
+        class="max-xl:col-span-4 max-md:col-span-6 w-full flex flex-col bg-white md:rounded-[16px] rounded-[12px] p-7 text-center mx-auto space-y-6 h-[196px] sm:h-[196px] lg:h-[196px]">
+        <span class="font-bold text-5xl bg-gradient-to-r from-[#0471A6] to-[#92CD91] bg-clip-text text-transparent">
+          {{status.value}}
+        </span>
+        <span class="text-xl font-semibold leading-relaxed">
+          {{status.label}}
+          <br />
+          {{status.description}}
+        </span>
+      </div>
+      }
+    </div>
+  </div>
+</section>
+<!-- end count -->
 
 <!-- start Our Social Feeds & MedicalVisual in the News & Customer Reviews -->
 <section class="lg:py-[80px] md:py-[60px] py-[40px] relative overflow-hidden">
@@ -383,10 +384,10 @@
                 News
               </span>
             </div>
-            <div class="text-[18px] text-[#040404] lg:text-start text-center">
+            <!-- <div class="text-[18px] text-[#040404] lg:text-start text-center">
               Read about CardioVisual Health's success stories, stay informed with the latest news and media updates,
               and explore informative blogs from our experts
-            </div>
+            </div> -->
           </div>
           <div class="flex flex-wrap items-center lg:justify-end justify-center sm:gap-4 gap-2">
             <button
@@ -413,8 +414,8 @@
                     <h3 class="text-[20px] font-bold">{{news.title}}</h3>
                     <p class="text-[16px] text-[#7A868C] mt-2">{{news.description}}
                     </p>
-                    <div class="h-[1px] w-full bg-[#D9D9D9] my-6 mt-[46px]"></div>
-                    <p class="text-[#7A868C] mt-4 font-medium">{{news.category}}</p>
+                    <!-- <div class="h-[1px] w-full bg-[#D9D9D9] my-6 mt-[46px]"></div>
+                    <p class="text-[#7A868C] mt-4 font-medium">{{news.category}}</p> -->
                   </div>
                 </div>
               </div>

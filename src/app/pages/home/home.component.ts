@@ -149,82 +149,98 @@ export class HomeComponent implements OnInit, AfterViewInit {
   experts = [
     {
       image: '../../../assets/images/expert-photos/JohnAllison.png',
-      name: 'John Allison, Cardiac Electrophysiologist',
+      name: 'John Allison',
+      Role: 'Cardiac Electrophysiologist',
       description: 'Texas Cardiac Arrhythmia',
     },
     {
       image: '../../../assets/images/expert-photos/ThomasBlevins.png',
-      name: 'Thomas Blevins, Endocrinologist',
+      name: 'Thomas Blevins',
+      role: 'Endocrinologist',
       description: 'Texas Diabetes & Endocrinology',
     },
     {
       image: '../../../assets/images/expert-photos/RobertChilton.png',
-      name: 'Robert Chilton, Cardiologist',
+      name: 'Robert Chilton',
+      role: 'Cardiologist',
       description: 'UT Health San Antonio',
     },
     {
       image: '../../../assets/images/expert-photos/RALPHDeFronzo.png',
-      name: 'RALPHDe Fronzo, Endocrinologist',
+      name: 'Ralph DeFronzo',
+      role: 'Endocrinologist',
       description: 'UT Health San Antonio',
     },
     {
       image: '../../../assets/images/expert-photos/AseemDesai.png',
-      name: 'Aseem Desai, Cardiac Electrophysiologist',
+      name: 'Aseem Desai',
+      role: 'Cardiac Electrophysiologist',
       description: 'Mission Heritage Medical Group',
     },
     {
       image: '../../../assets/images/expert-photos/MichaelGibson.png',
-      name: 'Michael Gibson, Cardiologist',
+      name: 'Michael Gibson',
+      role: 'Cardiologist',
       description: 'Harvard Medical School',
     },
     {
       image: '../../../assets/images/expert-photos/RodneyHorton.png',
-      name: 'Rodney Horton, Cardiac Electrophysiologist',
+      name: 'Rodney Horton',
+      role: 'Cardiac Electrophysiologist',
       description: 'Texas Cardiac Arrhythmia',
     },
     {
       image: '../../../assets/images/expert-photos/GuruKowlgi.png',
-      name: 'Guru Kowlgi, Cardiac Electrophysiologist',
+      name: 'Guru Kowlgi',
+      role: 'Cardiac Electrophysiologist',
       description: 'Mayo Clinic',
     },
     {
       image: '../../../assets/images/expert-photos/JayMathews2.png',
-      name: 'Jay Mathews, Cardiologist',
+      name: 'Jay Mathews',
+      role: 'Cardiologist',
       description: 'Manatee Memorial Hospital',
     },
     {
       image: '../../../assets/images/expert-photos/AndreaNatale.png',
-      name: 'Andrea Natale, Cardiac Electrophysiologist',
+      name: 'Andrea Natale',
+      role: 'Cardiac Electrophysiologist',
       description: 'Texas Cardiac Arrhythmia',
     },
     {
       image: '../../../assets/images/expert-photos/SushPrusty.png',
-      name: 'Sush Prusty, ER Physician',
+      name: 'Sush Prusty',
+      role: 'ER Physician',
       description: 'Southcoast Health Urgent Care Centers',
     },
     {
       image: '../../../assets/images/expert-photos/MichelleRouthenstein.png',
-      name: 'Michelle Routhenstein, Registered Dietitian Nutritionist',
+      name: 'Michelle Routhenstein',
+      role: 'Registered Dietitian Nutritionist',
       description: 'Entirely Nourished',
     },
     {
       image: '../../../assets/images/expert-photos/SamSears.png',
-      name: 'Sam Sears, Professor of Cardiac Psychology',
+      name: 'Sam Sears',
+      role: 'Professor of Cardiac Psychology',
       description: 'East Carolina University',
     },
     {
       image: '../../../assets/images/expert-photos/PaulTucker.png',
-      name: 'Paul A. Tucker, Cardiologist',
+      name: 'Paul A. Tucker',
+      role: 'Cardiologist',
       description: 'Texas Heart & Vascular',
     },
     {
       image: '../../../assets/images/expert-photos/RoderickTung.png',
-      name: 'Roderick Tung, Cardiologist',
+      name: 'Roderick Tung',
+      role: 'Cardiologist',
       description: 'University of Arizona Health Sciences',
     },
     {
       image: '../../../assets/images/expert-photos/CraigWalker.png',
-      name: 'Craig Walker, Cardiologist',
+      name: 'Craig Walker',
+      role: 'Cardiologist',
       description: 'Cardiovascular Institute of the South',
     },
   ];
@@ -315,16 +331,15 @@ export class HomeComponent implements OnInit, AfterViewInit {
       description:
         'Learn how Dr. Manish Chauhan turned an idea into CardioVisual, an app empowering clinicians and patients with clear, physician-approved video education on heart health.',
       category: 'Cardiac Sciences',
-      link:"https://cmsapi.disolutions.net/media/texmed.org-Physician Entrepreneur Develops App to Engage Patients.pdf"
+      link: 'https://www.texmed.org/Template.aspx?id=55867',
     },
     {
       imageSrc: '../../../assets/images/newsData/Heart Healthy App 2020.png',
       alt: 'Top Heart Healthy Apps & Devices For 2020',
       title: 'Top Heart Healthy Apps & Devices For 2020',
-      description:
-        ' See CardioVisual as a featured Top Heart Healthy App by Madison Avenue CardioVascular.',
+      description: ' See CardioVisual as a featured Top Heart Healthy App by Madison Avenue CardioVascular.',
       category: 'Cardiac Sciences',
-      link:'https://www.cardiologistnyc.com/blog/top-heart-healthy-apps-devices-for-2020'
+      link: 'https://www.cardiologistnyc.com/blog/top-heart-healthy-apps-devices-for-2020',
     },
     {
       imageSrc: '../../../assets/images/newsData/interactive digital health tools.png',
@@ -333,7 +348,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
       description:
         ' Discover how digital health tools, like CardioVisual, are transforming coronary heart disease prevention through interactive risk assessments and education.',
       category: 'Cardiac Sciences',
-      link:"https://cmsapi.disolutions.net/media/Interactive Tools.pdf"
+      link: 'https://cmsapi.disolutions.net/media/Interactive Tools.pdf',
     },
   ];
   digitalSolutionsData = [
