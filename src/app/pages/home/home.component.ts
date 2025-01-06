@@ -324,7 +324,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
       description:
         ' See CardioVisual as a featured Top Heart Healthy App by Madison Avenue CardioVascular.',
       category: 'Cardiac Sciences',
-      link:'https://cardiovisual.com/'
+      link:'https://www.cardiologistnyc.com/blog/top-heart-healthy-apps-devices-for-2020'
     },
     {
       imageSrc: '../../../assets/images/newsData/interactive digital health tools.png',
@@ -420,7 +420,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
       title: 'Download QR Sheets',
       image: '../../../assets/images/QR Sheet Thumbnail.png',
       hoverImage: '../../../assets/images/QR Sheet Thumbnail.png',
-      link: '',
+      link: 'https://cmsapi.disolutions.net/media/heart.medicalvisual.pdf',
     },
     {
       title: 'Download Mobile App',
