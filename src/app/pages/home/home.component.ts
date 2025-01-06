@@ -114,116 +114,118 @@ export class HomeComponent implements OnInit, AfterViewInit {
     },
   };
   collaborators = [
-    { name: 'FDA', image: '../../../assets/images/trusted-partner/Abbott.svg' },
-    { name: 'Philips', image: '../../../assets/images/trusted-partner/Abiomed.jpeg' },
-    { name: 'Medtronic', image: '../../../assets/images/trusted-partner/Alivecor.jpg' },
-    { name: 'NIH', image: '../../../assets/images/trusted-partner/AllianceforAgingResearch.jpg' },
-    { name: 'CDC', image: '../../../assets/images/trusted-partner/AstraZeneca.jpg' },
-    { name: 'FDA', image: '../../../assets/images/trusted-partner/Bard.svg' },
-    { name: 'Philips', image: '../../../assets/images/trusted-partner/BioSig.png' },
-    { name: 'Philips', image: '../../../assets/images/trusted-partner/BostonScientific.png' },
-    { name: 'Philips', image: '../../../assets/images/trusted-partner/CDC.png' },
-    { name: 'Philips', image: '../../../assets/images/trusted-partner/CookMedical.png' },
-    { name: 'Philips', image: '../../../assets/images/trusted-partner/Edwards.png' },
-    { name: 'Philips', image: '../../../assets/images/trusted-partner/Endologix.webp' },
-    { name: 'Philips', image: '../../../assets/images/trusted-partner/FDA.png' },
-    { name: 'Philips', image: '../../../assets/images/trusted-partner/Gore.png' },
-    { name: 'Philips', image: '../../../assets/images/trusted-partner/Itamar.jpg' },
-    { name: 'Philips', image: '../../../assets/images/trusted-partner/Medtronic.png' },
-    { name: 'Philips', image: '../../../assets/images/trusted-partner/NationalHeartLungandBloodInstitute.png' },
-    { name: 'Philips', image: '../../../assets/images/trusted-partner/NationalInstitutesofHealth.png' },
-    { name: 'Philips', image: '../../../assets/images/trusted-partner/OspreyMedical.png' },
-    { name: 'Philips', image: '../../../assets/images/trusted-partner/PhilipsHealthcare.webp' },
-    { name: 'Philips', image: '../../../assets/images/trusted-partner/ShockwaveMedical.webp' },
-    { name: 'Philips', image: '../../../assets/images/trusted-partner/Spectranetics.jpg' },
-    { name: 'Philips', image: '../../../assets/images/trusted-partner/StJudeMedical.png' },
-    { name: 'Philips', image: '../../../assets/images/trusted-partner/ZOLL.png' },
+    { name: 'Abbott', image: '../../../assets/images/trusted-partner/Abbott.svg' },
+    { name: 'Abiomed', image: '../../../assets/images/trusted-partner/Abiomed.jpeg' },
+    { name: 'Alivecor', image: '../../../assets/images/trusted-partner/Alivecor.jpg' },
+    { name: 'AllianceforAgingResearch', image: '../../../assets/images/trusted-partner/AllianceforAgingResearch.jpg' },
+    { name: 'AstraZeneca', image: '../../../assets/images/trusted-partner/AstraZeneca.jpg' },
+    { name: 'Bard', image: '../../../assets/images/trusted-partner/Bard.svg' },
+    { name: 'BioSig', image: '../../../assets/images/trusted-partner/BioSig.png' },
+    { name: 'BostonScientific', image: '../../../assets/images/trusted-partner/BostonScientific.png' },
+    { name: 'CDC', image: '../../../assets/images/trusted-partner/CDC.png' },
+    { name: 'CookMedical', image: '../../../assets/images/trusted-partner/CookMedical.png' },
+    { name: 'Edwards', image: '../../../assets/images/trusted-partner/Edwards.png' },
+    { name: 'Endologix', image: '../../../assets/images/trusted-partner/Endologix.webp' },
+    { name: 'FDA', image: '../../../assets/images/trusted-partner/FDA.png' },
+    { name: 'Gore', image: '../../../assets/images/trusted-partner/Gore.png' },
+    { name: 'Itamar', image: '../../../assets/images/trusted-partner/Itamar.jpg' },
+    { name: 'Medtronic', image: '../../../assets/images/trusted-partner/Medtronic.png' },
+    {
+      name: 'NationalHeartLungandBloodInstitute',
+      image: '../../../assets/images/trusted-partner/NationalHeartLungandBloodInstitute.png',
+    },
+    {
+      name: 'NationalInstitutesofHealth',
+      image: '../../../assets/images/trusted-partner/NationalInstitutesofHealth.png',
+    },
+    { name: 'OspreyMedical', image: '../../../assets/images/trusted-partner/OspreyMedical.png' },
+    { name: 'PhilipsHealthcare', image: '../../../assets/images/trusted-partner/PhilipsHealthcare.webp' },
+    { name: 'ShockwaveMedical', image: '../../../assets/images/trusted-partner/ShockwaveMedical.webp' },
+    { name: 'Spectranetics', image: '../../../assets/images/trusted-partner/Spectranetics.jpg' },
+    { name: 'StJudeMedical', image: '../../../assets/images/trusted-partner/StJudeMedical.png' },
+    { name: 'ZOLL', image: '../../../assets/images/trusted-partner/ZOLL.png' },
+    { name: 'BID', image: '../../../assets/images/keys-partner/BID.png' },
   ];
   experts = [
     {
-      image: '../../../assets/images/expert-photos/MichaelGibson.png',
-      name: 'Michael Gibson, MD',
-      description: 'Harvard Medical School',
+      image: '../../../assets/images/expert-photos/JohnAllison.png',
+      name: 'John Allison, Cardiac Electrophysiologist',
+      description: 'Texas Cardiac Arrhythmia',
     },
     {
       image: '../../../assets/images/expert-photos/ThomasBlevins.png',
-      name: 'Thomas Blevins, MD',
-      description: 'Founder, Texas Diabetes and Endocrinology',
-    },
-    {
-      image: '../../../assets/images/expert-photos/AndreaNatale.png',
-      name: 'Andrea Natale, MD',
-      description: 'Texas Cardiac Arrhythmia Institute',
-    },
-    {
-      image: '../../../assets/images/expert-photos/PaulTucker.png',
-      name: 'Paul A. Tucker, MD',
-      description: "St. David's South Austin Medical Center",
-    },
-    {
-      image: '../../../assets/images/expert-photos/AseemDesai.png',
-      name: 'Aseem Desai, MD',
-      description: "St. David's South Austin Medical Center",
-    },
-    {
-      image: '../../../assets/images/expert-photos/CraigWalker.png',
-      name: 'Craig Walker, MD',
-      description: "St. David's South Austin Medical Center",
-    },
-    {
-      image: '../../../assets/images/expert-photos/GuruKowlgi.png',
-      name: 'Guru Kowlgi, MD',
-      description: "St. David's South Austin Medical Center",
-    },
-    {
-      image: '../../../assets/images/expert-photos/JayMathews2.png',
-      name: 'Jay Mathews, MD',
-      description: "St. David's South Austin Medical Center",
-    },
-    {
-      image: '../../../assets/images/expert-photos/JohnAllison.png',
-      name: 'John Allison, MD',
-      description: "St. David's South Austin Medical Center",
-    },
-    {
-      image: '../../../assets/images/expert-photos/MichelleRouthenstein.png',
-      name: 'Michelle Routhenstein, MD',
-      description: "St. David's South Austin Medical Center",
-    },
-    {
-      image: '../../../assets/images/expert-photos/RALPHDeFronzo.png',
-      name: 'RALPHDe Fronzo, MD',
-      description: "St. David's South Austin Medical Center",
+      name: 'Thomas Blevins, Endocrinologist',
+      description: 'Texas Diabetes & Endocrinology',
     },
     {
       image: '../../../assets/images/expert-photos/RobertChilton.png',
-      name: 'Robert Chilton, MD',
-      description: "St. David's South Austin Medical Center",
+      name: 'Robert Chilton, Cardiologist',
+      description: 'UT Health San Antonio',
     },
     {
-      image: '../../../assets/images/expert-photos/RoderickTung.png',
-      name: 'Roderick Tung, MD',
-      description: "St. David's South Austin Medical Center",
+      image: '../../../assets/images/expert-photos/RALPHDeFronzo.png',
+      name: 'RALPHDe Fronzo, Endocrinologist',
+      description: 'UT Health San Antonio',
+    },
+    {
+      image: '../../../assets/images/expert-photos/AseemDesai.png',
+      name: 'Aseem Desai, Cardiac Electrophysiologist',
+      description: 'Mission Heritage Medical Group',
+    },
+    {
+      image: '../../../assets/images/expert-photos/MichaelGibson.png',
+      name: 'Michael Gibson, Cardiologist',
+      description: 'Harvard Medical School',
     },
     {
       image: '../../../assets/images/expert-photos/RodneyHorton.png',
-      name: 'Rodney Horton, MD',
-      description: "St. David's South Austin Medical Center",
+      name: 'Rodney Horton, Cardiac Electrophysiologist',
+      description: 'Texas Cardiac Arrhythmia',
     },
     {
-      image: '../../../assets/images/expert-photos/SamSears.png',
-      name: 'Sam Sears, MD',
-      description: "St. David's South Austin Medical Center",
+      image: '../../../assets/images/expert-photos/GuruKowlgi.png',
+      name: 'Guru Kowlgi, Cardiac Electrophysiologist',
+      description: 'Mayo Clinic',
+    },
+    {
+      image: '../../../assets/images/expert-photos/JayMathews2.png',
+      name: 'Jay Mathews, Cardiologist',
+      description: 'Manatee Memorial Hospital',
+    },
+    {
+      image: '../../../assets/images/expert-photos/AndreaNatale.png',
+      name: 'Andrea Natale, Cardiac Electrophysiologist',
+      description: 'Texas Cardiac Arrhythmia',
     },
     {
       image: '../../../assets/images/expert-photos/SushPrusty.png',
-      name: 'Sush Prusty, MD',
-      description: "St. David's South Austin Medical Center",
+      name: 'Sush Prusty, ER Physician',
+      description: 'Southcoast Health Urgent Care Centers',
     },
     {
-      image: '../../../assets/images/expert-photos/WendyTzou.png',
-      name: 'Wendy Tzou, MD',
-      description: "St. David's South Austin Medical Center",
+      image: '../../../assets/images/expert-photos/MichelleRouthenstein.png',
+      name: 'Michelle Routhenstein, Registered Dietitian Nutritionist',
+      description: 'Entirely Nourished',
+    },
+    {
+      image: '../../../assets/images/expert-photos/SamSears.png',
+      name: 'Sam Sears, Professor of Cardiac Psychology',
+      description: 'East Carolina University',
+    },
+    {
+      image: '../../../assets/images/expert-photos/PaulTucker.png',
+      name: 'Paul A. Tucker, Cardiologist',
+      description: 'Texas Heart & Vascular',
+    },
+    {
+      image: '../../../assets/images/expert-photos/RoderickTung.png',
+      name: 'Roderick Tung, Cardiologist',
+      description: 'University of Arizona Health Sciences',
+    },
+    {
+      image: '../../../assets/images/expert-photos/CraigWalker.png',
+      name: 'Craig Walker, Cardiologist',
+      description: 'Cardiovascular Institute of the South',
     },
   ];
   logos = [
@@ -233,7 +235,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
       src: '../../../assets/images/keys-partner/KansasCityHeartRhythmInstitute.png',
       alt: "St. David's Medical Center",
     },
-    { src: '../../../assets/images/keys-partner/MountSinaiHospital.png', alt: 'SM Web Logo' },
     { src: '../../../assets/images/keys-partner/Outgrow.png', alt: 'HMS Logo' },
     { src: '../../../assets/images/keys-partner/StanfordHealthCare.png', alt: 'White Logo' },
     { src: '../../../assets/images/keys-partner/StDavid_sMedicaCenter.png', alt: "St. David's Medical Center" },
@@ -308,44 +309,31 @@ export class HomeComponent implements OnInit, AfterViewInit {
   ];
   newsData = [
     {
-      imageSrc: '../../../assets/images/12 1.png',
-      alt: 'Healthcare',
-      title: 'Successful Heart and Kidney Treatment by Dr. Michael Gibson',
+      imageSrc: '../../../assets/images/newsData/Leading Innovation.png',
+      alt: 'Leading Innovation',
+      title: 'Leading Innovation: Physician Entrepreneur Develops App to Engage Patients',
       description:
-        'Dr. Michael Gibson, Senior Consultant Cardiology, Adult at cardioVisual provided by medical visual, exemplifies this through his treatment of Mr. Jack Paul.',
+        'Learn how Dr. Manish Chauhan turned an idea into CardioVisual, an app empowering clinicians and patients with clear, physician-approved video education on heart health.',
       category: 'Cardiac Sciences',
+      link:"https://cmsapi.disolutions.net/media/texmed.org-Physician Entrepreneur Develops App to Engage Patients.pdf"
     },
     {
-      imageSrc: '../../../assets/images/12 1.png',
-      alt: 'Healthcare',
-      title: 'Successful Heart and Kidney Treatment by Dr. Michael Gibson',
+      imageSrc: '../../../assets/images/newsData/Heart Healthy App 2020.png',
+      alt: 'Top Heart Healthy Apps & Devices For 2020',
+      title: 'Top Heart Healthy Apps & Devices For 2020',
       description:
-        'Dr. Michael Gibson, Senior Consultant Cardiology, Adult at cardioVisual provided by medical visual, exemplifies this through his treatment of Mr. Jack Paul.',
+        ' See CardioVisual as a featured Top Heart Healthy App by Madison Avenue CardioVascular.',
       category: 'Cardiac Sciences',
+      link:'https://cardiovisual.com/'
     },
     {
-      imageSrc: '../../../assets/images/12 1.png',
-      alt: 'Healthcare',
-      title: 'Successful Heart and Kidney Treatment by Dr. Michael Gibson',
+      imageSrc: '../../../assets/images/newsData/interactive digital health tools.png',
+      alt: 'Engaging People in Their Health with Interactive Digital Health Tools',
+      title: 'Engaging People in Their Health with Interactive Digital Health Tools',
       description:
-        'Dr. Michael Gibson, Senior Consultant Cardiology, Adult at cardioVisual provided by medical visual, exemplifies this through his treatment of Mr. Jack Paul.',
+        ' Discover how digital health tools, like CardioVisual, are transforming coronary heart disease prevention through interactive risk assessments and education.',
       category: 'Cardiac Sciences',
-    },
-    {
-      imageSrc: '../../../assets/images/12 1.png',
-      alt: 'Healthcare',
-      title: 'Successful Heart and Kidney Treatment by Dr. Michael Gibson',
-      description:
-        'Dr. Michael Gibson, Senior Consultant Cardiology, Adult at cardioVisual provided by medical visual, exemplifies this through his treatment of Mr. Jack Paul.',
-      category: 'Cardiac Sciences',
-    },
-    {
-      imageSrc: '../../../assets/images/12 1.png',
-      alt: 'Healthcare',
-      title: 'Successful Heart and Kidney Treatment by Dr. Michael Gibson',
-      description:
-        'Dr. Michael Gibson, Senior Consultant Cardiology, Adult at cardioVisual provided by medical visual, exemplifies this through his treatment of Mr. Jack Paul.',
-      category: 'Cardiac Sciences',
+      link:"https://cmsapi.disolutions.net/media/Interactive Tools.pdf"
     },
   ];
   digitalSolutionsData = [
@@ -379,22 +367,21 @@ export class HomeComponent implements OnInit, AfterViewInit {
   ];
   youtubVideoContent: any = null;
   selectedReview: any = null;
-
   contentData = [
     {
       title: 'Heart Health Education',
       link: 'https://heart.medicalvisual.com',
-      image: '../../../assets/images/explore-content-1.png',
+      image: '../../../assets/images/Heart Health Education.png',
     },
     {
       title: 'Diabetes Education',
       link: 'https://diabetes.medicalvisual.com/',
-      image: '../../../assets/images/explore-content-2.png',
+      image: '../../../assets/images/Diabetes Education.png',
     },
     {
       title: 'Diabetes Self-Management Education',
       link: 'https://diabetes.medicalvisual.com/clinicians-learning',
-      image: '../../../assets/images/explore-content-3.png',
+      image: '../../../assets/images/Diabetes Self Management Education.png',
     },
   ];
 
@@ -425,20 +412,20 @@ export class HomeComponent implements OnInit, AfterViewInit {
   clinicalResources = [
     {
       title: 'Customize Website',
-      image: '../../../assets/images/CustomizeWebsite.svg',
-      hoverImage: '../../../assets/images/CustomizeWebsiteWhite.svg',
+      image: '../../../assets/images/Custom Website Thumbnail.png',
+      hoverImage: '../../../assets/images/Custom Website Thumbnail.png',
       link: 'https://medicalvisual.com/',
     },
     {
       title: 'Download QR Sheets',
-      image: '../../../assets/images/DownloadQRSheets.svg',
-      hoverImage: '../../../assets/images/DownloadQRSheetsWhite.svg',
+      image: '../../../assets/images/QR Sheet Thumbnail.png',
+      hoverImage: '../../../assets/images/QR Sheet Thumbnail.png',
       link: '',
     },
     {
       title: 'Download Mobile App',
-      image: '../../../assets/images/DownloadMobileApp.svg',
-      hoverImage: '../../../assets/images/DownloadMobileAppWhite.svg',
+      image: '../../../assets/images/CV App.png',
+      hoverImage: '../../../assets/images/CV App.png',
       link: 'https://cardiovisual.com/',
     },
   ];

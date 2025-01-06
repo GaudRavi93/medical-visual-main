@@ -51,12 +51,12 @@
       <p class="text-md md:text-xl leading-relaxed font-medium">
         Our video-based platforms help clinicians easily provide patients with
         <br class="max-sm:hidden" />
-        comprehensive and reliable information on heart health, diabetes, and wellness.
+        comprehensive information on heart health, diabetes, and wellness.
       </p>
       <p class="text-md md:text-xl leading-relaxed font-medium">
-        Our goal is to empower patient learning and engagement throughout their care
+        Our goal is to empower patients to improve
         <br class="max-sm:hidden" />
-        journey - to improve health outcomes while saving clinicians valuable time.
+        health outcomes while saving clinicians valuable time.
       </p>
     </div>
   </div>
@@ -75,7 +75,7 @@
       </h3>
       <div class="grid sm:grid-cols-12 gap-4">
         @for (digitalSolutions of digitalSolutionsData; track $index) {
-        <div class="bg-white md:rounded-[16px] rounded-[12px] w-full md:col-span-4 sm:col-span-6"
+        <div class="bg-white md:rounded-[16px] rounded-[12px] w-full md:col-span-4 sm:col-span-6 cursor-pointer"
           (click)="redirect(digitalSolutions.link)">
           <img [src]="digitalSolutions.imageSrc" [alt]="digitalSolutions.alt"
             class="md:rounded-t-[16px] rounded-t-[12px] w-full object-contain max-h-[300px]" />
@@ -107,7 +107,7 @@
         <div class="grid sm:grid-cols-12 gap-4">
           @for(details of contentData; track $index){
           <div (click)="redirect(details.link)"
-            class="bg-white md:rounded-[16px] rounded-[12px] overflow-hidden flex flex-col items-center relative md:col-span-4 sm:col-span-6">
+            class="bg-white md:rounded-[16px] rounded-[12px] overflow-hidden flex flex-col items-center relative md:col-span-4 sm:col-span-6 cursor-pointer">
             <img [src]="details.image" alt="Heart Health Education" class="object-cover w-full h-[340px]" />
             <p
               class="text-white text-center md:text-[26px] text-[20px] font-medium pt-3 absolute bottom-4 left-0 w-full flex justify-center z-10">
@@ -164,9 +164,7 @@
           <div (click)="redirect(details.link)"
             class="group cursor-pointer md:col-span-4 sm:col-span-6 bg-white hover:bg-gradient-to-r from-[#0471A6] to-[#92CD91] md:rounded-[16px] rounded-[12px] border border-[#8DCAE2] flex flex-col justify-center items-center md:px-6 px-2 md:py-5 py-3">
             <img [src]="details.image" alt="Medical Practices & Hospitals"
-              class="md:pt-[52px] pt-[40px] md:pb-[60px] pb-[40px] group-hover:hidden" />
-            <img [src]="details.hoverImage" alt="Medical Practices & Hospitals"
-              class="md:pt-[52px] pt-[40px] md:pb-[60px] pb-[40px] group-hover:block hidden" />
+              class="md:pt-[52px] pt-[40px] md:pb-[60px] pb-[40px]" />
             <div class="py-5 text-center text-gray-800 group-hover:text-white">
               <p class="text-lg md:text-2xl font-bold">{{details.title}}</p>
             </div>
@@ -407,7 +405,9 @@
             <div class="swiper-wrapper">
               @for (news of newsData; track $index) {
               <div class="swiper-slide custom-box-shadow bg-white h-auto md:rounded-[16px] rounded-[12px]">
-                <div class="bg-white md:rounded-[16px] rounded-[12px] custom-box-shadow transition duration-300">
+                <div
+                  class="bg-white md:rounded-[16px] rounded-[12px] custom-box-shadow transition duration-300 cursor-pointer"
+                  (click)="redirect(news.link)">
                   <img [src]="news.imageSrc" [alt]="news.alt" class="w-full h-[235px] object-cover rounded-t-lg" />
                   <div class="p-4">
                     <h3 class="text-[20px] font-bold">{{news.title}}</h3>
