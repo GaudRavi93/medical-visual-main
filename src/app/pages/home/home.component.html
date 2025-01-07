@@ -207,14 +207,13 @@
 
     <!-- Expert Carousel Section -->
     <div class="expert-swiper swiper pt-10 pb-16">
-      <div class="swiper-wrapper flex items-center h-auto">
+      <div class="swiper-wrapper flex items-center h-full">
         @for (expert of experts; track $index) {
         <div class="swiper-slide custom-box-shadow bg-white h-auto md:rounded-[16px] rounded-[12px]">
           <img [src]="expert.image" [alt]="expert.name"
             class="md:rounded-t-[16px] rounded-t-[12px] items-center w-full h-[212px] object-cover justify-center" />
           <div class="p-4">
-            <p class="text-base font-bold">{{ expert.name }}</p>
-            <p class="text-base font-bold">{{ expert.role }}</p>
+            <p class="text-base font-bold max-h-[120px]">{{ expert.name }}, {{expert.role }}</p>
             <p class="text-[#7A868C] min-h-[48px]">{{ expert.description }}</p>
           </div>
         </div>
@@ -407,7 +406,7 @@
               @for (news of newsData; track $index) {
               <div class="swiper-slide custom-box-shadow bg-white h-auto md:rounded-[16px] rounded-[12px]">
                 <div
-                  class="bg-white md:rounded-[16px] rounded-[12px] custom-box-shadow transition duration-300 cursor-pointer"
+                  class="bg-white md:rounded-[16px] rounded-[12px] custom-box-shadow transition duration-300 cursor-pointer h-full"
                   (click)="redirect(news.link)">
                   <img [src]="news.imageSrc" [alt]="news.alt" class="w-full h-[235px] object-cover rounded-t-lg" />
                   <div class="p-4">

@@ -120,6 +120,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
     { name: 'AllianceforAgingResearch', image: '../../../assets/images/trusted-partner/AllianceforAgingResearch.jpg' },
     { name: 'AstraZeneca', image: '../../../assets/images/trusted-partner/AstraZeneca.jpg' },
     { name: 'Bard', image: '../../../assets/images/trusted-partner/Bard.svg' },
+    { name: 'BID', image: '../../../assets/images/keys-partner/BID.png' },
     { name: 'BioSig', image: '../../../assets/images/trusted-partner/BioSig.png' },
     { name: 'BostonScientific', image: '../../../assets/images/trusted-partner/BostonScientific.png' },
     { name: 'CDC', image: '../../../assets/images/trusted-partner/CDC.png' },
@@ -144,13 +145,12 @@ export class HomeComponent implements OnInit, AfterViewInit {
     { name: 'Spectranetics', image: '../../../assets/images/trusted-partner/Spectranetics.jpg' },
     { name: 'StJudeMedical', image: '../../../assets/images/trusted-partner/StJudeMedical.png' },
     { name: 'ZOLL', image: '../../../assets/images/trusted-partner/ZOLL.png' },
-    { name: 'BID', image: '../../../assets/images/keys-partner/BID.png' },
   ];
   experts = [
     {
       image: '../../../assets/images/expert-photos/JohnAllison.png',
       name: 'John Allison',
-      Role: 'Cardiac Electrophysiologist',
+      role: 'Cardiac Electrophysiologist',
       description: 'Texas Cardiac Arrhythmia',
     },
     {
@@ -444,10 +444,15 @@ export class HomeComponent implements OnInit, AfterViewInit {
       link: 'https://cardiovisual.com/',
     },
   ];
+
+  accessToken: string = 'WPL_AP1.KxokNzkjfeIegfwV.bRfwEA==';
+  apiUrl: string = 'https://api.linkedin.com/v2/shares?q=owners&owners=urn:li:organization:cardiovisual';
+  posts: any[] = [];
   constructor(private dialog: MatDialog) {}
 
   ngOnInit() {
     this.getYoutubVideo();
+    this.getLinkedinPosts();
   }
 
   ngAfterViewInit(): void {
@@ -489,6 +494,30 @@ export class HomeComponent implements OnInit, AfterViewInit {
       console.log('no url');
     } else {
       window.open(url, '_blank');
+    }
+  }
+
+  async getLinkedinPosts() {
+    try {
+      const response = await fetch(this.apiUrl, {
+        method: 'GET',
+        headers: {
+          Authorization: `Bearer ${this.accessToken}`,
+          'Content-Type': 'application/json',
+        },
+      });
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      const data = await response.json();
+      this.posts = data.elements.map((post: any) => ({
+        text: post.text?.text,
+        createdTime: new Date(post.created?.time),
+      }));
+    } catch (error) {
+      console.error('Error fetching LinkedIn posts:', error);
     }
   }
 }
