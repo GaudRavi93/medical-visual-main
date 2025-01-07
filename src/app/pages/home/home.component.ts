@@ -441,13 +441,16 @@ export class HomeComponent implements OnInit, AfterViewInit {
       title: 'Download Mobile App',
       image: '../../../assets/images/CV App.png',
       hoverImage: '../../../assets/images/CV App.png',
-      link: 'https://cardiovisual.com/',
+      link: 'open app link Model',
     },
   ];
 
   accessToken: string = 'WPL_AP1.KxokNzkjfeIegfwV.bRfwEA==';
   apiUrl: string = 'https://api.linkedin.com/v2/shares?q=owners&owners=urn:li:organization:cardiovisual';
   posts: any[] = [];
+  // private clientId = '86vsz9v97nrarl';
+  // private clientSecret = 'WPL_AP1.KxokNzkjfeIegfwV.bRfwEA==';
+  // private tokenUrl = 'https://www.linkedin.com/oauth/v2/accessToken';
   constructor(private dialog: MatDialog) {}
 
   ngOnInit() {
@@ -480,7 +483,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
     }
   }
 
-  openDialog(openReview: TemplateRef<any>, review: any): void {
+  openDialog(openReview: TemplateRef<any>, review?: any): void {
     this.selectedReview = review;
     this.dialog.open(openReview);
   }
@@ -489,8 +492,10 @@ export class HomeComponent implements OnInit, AfterViewInit {
     this.dialog.closeAll();
     this.selectedReview = null;
   }
-  redirect(url: string) {
-    if (!url) {
+  redirect(url: string , appTemplate ?:TemplateRef<any>) {
+    if (url === 'open app link Model' && appTemplate) {
+      this.dialog.open(appTemplate)
+    } else if (!url) {
       console.log('no url');
     } else {
       window.open(url, '_blank');
