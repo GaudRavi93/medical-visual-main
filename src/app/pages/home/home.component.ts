@@ -114,13 +114,13 @@ export class HomeComponent implements OnInit, AfterViewInit {
     },
   };
   collaborators = [
+    { name: 'BID', image: '../../../assets/images/keys-partner/BID.png' },
     { name: 'Abbott', image: '../../../assets/images/trusted-partner/Abbott.svg' },
     { name: 'Abiomed', image: '../../../assets/images/trusted-partner/Abiomed.jpeg' },
     { name: 'Alivecor', image: '../../../assets/images/trusted-partner/Alivecor.jpg' },
     { name: 'AllianceforAgingResearch', image: '../../../assets/images/trusted-partner/AllianceforAgingResearch.jpg' },
     { name: 'AstraZeneca', image: '../../../assets/images/trusted-partner/AstraZeneca.jpg' },
     { name: 'Bard', image: '../../../assets/images/trusted-partner/Bard.svg' },
-    { name: 'BID', image: '../../../assets/images/keys-partner/BID.png' },
     { name: 'BioSig', image: '../../../assets/images/trusted-partner/BioSig.png' },
     { name: 'BostonScientific', image: '../../../assets/images/trusted-partner/BostonScientific.png' },
     { name: 'CDC', image: '../../../assets/images/trusted-partner/CDC.png' },
@@ -358,7 +358,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
       title1: 'For clinics &',
       title2: 'provider systems',
       subtitle: 'Custom Website',
-      link: 'https://medicalvisual.com/',
+      link: 'https://product.medicalvisual.com/',
       // description: 'For clinics & provider systems',
     },
     {
@@ -429,7 +429,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
       title: 'Customize Website',
       image: '../../../assets/images/Custom Website Thumbnail.png',
       hoverImage: '../../../assets/images/Custom Website Thumbnail.png',
-      link: 'https://medicalvisual.com/',
+      link: 'https://product.medicalvisual.com/',
     },
     {
       title: 'Download QR Sheets',
