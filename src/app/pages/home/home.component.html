@@ -1,44 +1,27 @@
 <!-- start intro -->
 <section class="bg-[#0471A6] relative">
   <div class="container mx-auto">
-  <div class="grid grid-cols-1 md:grid-cols-4 gap-4 h-full">
-    <div class="col-span-2 ">
-      <img src="../../../assets/images/digital-solutions/hero-image.png" class="object-cover " />
-    </div>
-    <div class="col-span-2">
-    <div class="flex justify-center w-full h-full max-lg:px-10">
-      <div class="md:pl-2 py-5 sm:pr-5 flex flex-col justify-center max-lg:items-center w-full relative z-20">
-        <div class="flex justify-center ">
-          <img src="../../../assets/images/footerLogo.svg" alt="footer-logo"
-            class="2xl:h-[48px] xl:h-[40px] lg:h-[32px] h-[30px]" />
-        </div>
-        <div
-          class="uppercase text-white font-medium 2xl:text-[48px] xl:text-[40px] lg:text-[30px] pt-5 pl-1 max-lg:pb-12 max-sm: text-center">
-          Educational Videos Created and Curated by Doctors
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 h-full">
+      <div class="col-span-2 ">
+        <img src="../../../assets/images/digital-solutions/hero-image.png" class="object-cover " />
+      </div>
+      <div class="col-span-2">
+        <div class="flex justify-center w-full h-full max-lg:px-10">
+          <div class="md:pl-2 py-5 sm:pr-5 flex flex-col justify-center max-lg:items-center w-full relative z-20">
+            <div class="flex justify-center ">
+              <img src="../../../assets/images/footerLogo.svg" alt="footer-logo"
+                class="2xl:h-[48px] xl:h-[40px] lg:h-[32px] h-[30px]" />
+            </div>
+            <div
+              class="uppercase text-white font-medium 2xl:text-[48px] xl:text-[40px] lg:text-[30px] pt-5 pl-1 max-lg:pb-12 max-sm: text-center">
+              Educational Videos Created and Curated by Doctors
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  </div>
-</div>
 </section>
-<!-- end intro -->
-
-<!-- start searchbox -->
-<!-- <section class="-mt-[36px] relative z-20">
-  <div class="container mx-auto">
-    <div class="flex justify-center">
-      <div class="lg:w-[75%] md:w-[80%] w-full mx-auto relative">
-        <input type="text" placeholder="Search for Conditions, Treatments, and other Educational Videos"
-          class="xl:pl-[75px] pl-[65px] pr-5 text-ellipsis w-full placeholder:xl:text-[20px] xl:text-[20px] xl:h-[70px] h-[60px] md:rounded-[16px] rounded-[12px] shadow-md focus:outline-none focus:ring-2 focus:ring-[#92CD91]" />
-        <img src="../../../assets/images/search-icon.svg" class="absolute top-5 xl:left-7 left-6 xl:h-7 h-5" />
-      </div>
-    </div>
-  </div>
-</section> -->
-<!-- end searchbox -->
-
-<!-- start description -->
 <section class="bg-white lg:py-[60px] md:py-[48px] py-[40px]">
   <div class="container mx-auto px-4 sm:px-6 md:px-8">
     <!-- Heading Section -->
@@ -218,7 +201,10 @@
             class="md:rounded-t-[16px] rounded-t-[12px] items-center w-full h-[212px] object-cover justify-center" />
           <div class="p-4">
             <p class="text-base font-bold max-h-[120px]">{{ expert.name }}, {{expert.role }}</p>
-            <p class="text-[#7A868C] min-h-[48px]">{{ expert.description }}</p>
+            <p [ngClass]="{'min-h-[24px]': expert.name === 'Michelle Routhenstein','min-h-[48px]': expert.name !== 'Michelle Routhenstein'}"
+              class="text-[#7A868C]">
+              {{ expert.description }}
+            </p>
           </div>
         </div>
         }
@@ -326,7 +312,33 @@
         <div>
           <!-- Cards Container -->
           <div class="grid sm:grid-cols-12 gap-3">
-            <!-- Youtub Card -->
+            <!-- Instagram Card -->
+            <div
+              class="card bg-white md:rounded-[16px] rounded-[12px] custom-box-shadow transition duration-300 md:col-span-4 sm:col-span-6">
+              <img src="../../../assets/images/instagramProfile.png" alt="Texas Diabetes Logo"
+                class="w-full md:rounded-t-[16px] rounded-t-[12px]" />
+              <div class="p-4">
+                <p class="text-[20px] text-black font-bold">CardioVisual</p>
+                <a class="text-[16px] mt-2 flex items-center gap-2 hover:text-blue-600"
+                  href="https://www.instagram.com/cardiovisual" target="_blank">Instagram
+                  <mat-icon>launch</mat-icon>
+                </a>
+              </div>
+            </div>
+            <!-- LinkedIn Card -->
+            <div
+              class="card bg-white md:rounded-[16px] rounded-[12px] custom-box-shadow transition duration-300 md:col-span-4 sm:col-span-6 sm:col-start-4">
+              <img src="../../../assets/images/linkedinProfile.png" alt="Texas Diabetes Logo"
+                class="w-full md:rounded-t-[16px] rounded-t-[12px]" />
+              <div class="p-4">
+                <p class="text-[20px] text-black font-bold">CardioVisual</p>
+                <a class="text-[16px] mt-2 flex items-center gap-2 hover:text-blue-600"
+                  href="https://www.linkedin.com/company/6424675/" target="_blank">LinkedIn
+                  <mat-icon>launch</mat-icon>
+                </a>
+              </div>
+            </div>
+            <!-- YouTube Card -->
             <div
               class="card bg-white md:rounded-[16px] rounded-[12px] custom-box-shadow transition duration-300 md:col-span-4 sm:col-span-6">
               <img [src]="youtubVideoContent?.snippet?.thumbnails?.high?.url" [alt]="youtubVideoContent?.snippet?.title"
@@ -339,37 +351,6 @@
                 </a>
               </div>
             </div>
-
-            <!-- Card 2 -->
-            <div
-              class="card bg-white md:rounded-[16px] rounded-[12px] custom-box-shadow transition duration-300 md:col-span-4 sm:col-span-6">
-              <img src="../../../assets/images/cv.jpg" alt="Texas Diabetes Logo"
-                class="w-full md:rounded-t-[16px] rounded-t-[12px]" />
-              <div class="p-4">
-                <p class="text-[20px] text-black font-bold">Advice HD Grid Catheter</p>
-                <p class="text-[16px] text-[#282A2B] mt-2">Instagram</p>
-              </div>
-            </div>
-
-            <!-- Card 3 -->
-            <div
-              class="card bg-white md:rounded-[16px] rounded-[12px] custom-box-shadow transition duration-300 md:col-span-4 sm:col-span-6 sm:col-start-4">
-              <img src="../../../assets/images/cv.jpg" alt="Texas Diabetes Logo"
-                class="w-full md:rounded-t-[16px] rounded-t-[12px]" />
-              <div class="p-4">
-                <p class="text-[20px] text-black font-bold">Advice HD Grid Catheter</p>
-                <p class="text-[16px] text-[#282A2B] mt-2">LinkedIn</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- "View More" Button -->
-          <div class="mt-6 flex justify-end">
-            <a href="#"
-              class="text-[#0471A6] text-lg hover:text-[#0471A6] transition duration-300 flex items-center gap-5">
-              View More
-              <img src="../../../assets/images/right-forward.svg" />
-            </a>
           </div>
         </div>
       </div>
@@ -537,10 +518,10 @@
   <div class="relative p-6 max-w-2xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
     <div class="flex justify-between items-center mb-4">
       <h2 class="text-xl font-semibold">Download Our App</h2>
-       <button class="absolute top-2 right-2 p-2 text-gray-500 hover:text-gray-700 rounded-full outline-none" mat-icon-button
-      (click)="closeDialog()">
-      <mat-icon>close</mat-icon>
-    </button>
+      <button class="absolute top-2 right-2 p-2 text-gray-500 hover:text-gray-700 rounded-full outline-none"
+        mat-icon-button (click)="closeDialog()">
+        <mat-icon>close</mat-icon>
+      </button>
     </div>
     <p class="text-gray-700 mb-6">Get the app for your mobile device.</p>
     <div class="flex justify-center gap-4">

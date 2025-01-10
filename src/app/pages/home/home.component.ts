@@ -114,7 +114,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
     },
   };
   collaborators = [
-    { name: 'BID', image: '../../../assets/images/keys-partner/BID.png' },
     { name: 'Abbott', image: '../../../assets/images/trusted-partner/Abbott.svg' },
     { name: 'Abiomed', image: '../../../assets/images/trusted-partner/Abiomed.jpeg' },
     { name: 'Alivecor', image: '../../../assets/images/trusted-partner/Alivecor.jpg' },
@@ -148,34 +147,10 @@ export class HomeComponent implements OnInit, AfterViewInit {
   ];
   experts = [
     {
-      image: '../../../assets/images/expert-photos/JohnAllison.png',
-      name: 'John Allison',
+      image: '../../../assets/images/expert-photos/AndreaNatale.png',
+      name: 'Andrea Natale',
       role: 'Cardiac Electrophysiologist',
       description: 'Texas Cardiac Arrhythmia',
-    },
-    {
-      image: '../../../assets/images/expert-photos/ThomasBlevins.png',
-      name: 'Thomas Blevins',
-      role: 'Endocrinologist',
-      description: 'Texas Diabetes & Endocrinology',
-    },
-    {
-      image: '../../../assets/images/expert-photos/RobertChilton.png',
-      name: 'Robert Chilton',
-      role: 'Cardiologist',
-      description: 'UT Health San Antonio',
-    },
-    {
-      image: '../../../assets/images/expert-photos/RALPHDeFronzo.png',
-      name: 'Ralph DeFronzo',
-      role: 'Endocrinologist',
-      description: 'UT Health San Antonio',
-    },
-    {
-      image: '../../../assets/images/expert-photos/AseemDesai.png',
-      name: 'Aseem Desai',
-      role: 'Cardiac Electrophysiologist',
-      description: 'Mission Heritage Medical Group',
     },
     {
       image: '../../../assets/images/expert-photos/MichaelGibson.png',
@@ -184,46 +159,16 @@ export class HomeComponent implements OnInit, AfterViewInit {
       description: 'Harvard Medical School',
     },
     {
-      image: '../../../assets/images/expert-photos/RodneyHorton.png',
-      name: 'Rodney Horton',
-      role: 'Cardiac Electrophysiologist',
-      description: 'Texas Cardiac Arrhythmia',
+      image: '../../../assets/images/expert-photos/ThomasBlevins.png',
+      name: 'Thomas Blevins',
+      role: 'Endocrinologist',
+      description: 'Texas Diabetes & Endocrinology',
     },
     {
-      image: '../../../assets/images/expert-photos/GuruKowlgi.png',
-      name: 'Guru Kowlgi',
-      role: 'Cardiac Electrophysiologist',
-      description: 'Mayo Clinic',
-    },
-    {
-      image: '../../../assets/images/expert-photos/JayMathews2.png',
-      name: 'Jay Mathews',
-      role: 'Cardiologist',
-      description: 'Manatee Memorial Hospital',
-    },
-    {
-      image: '../../../assets/images/expert-photos/AndreaNatale.png',
-      name: 'Andrea Natale',
-      role: 'Cardiac Electrophysiologist',
-      description: 'Texas Cardiac Arrhythmia',
-    },
-    {
-      image: '../../../assets/images/expert-photos/SushPrusty.png',
-      name: 'Sush Prusty',
-      role: 'ER Physician',
-      description: 'Southcoast Health Urgent Care Centers',
-    },
-    {
-      image: '../../../assets/images/expert-photos/MichelleRouthenstein.png',
-      name: 'Michelle Routhenstein',
-      role: 'Registered Dietitian Nutritionist',
-      description: 'Entirely Nourished',
-    },
-    {
-      image: '../../../assets/images/expert-photos/SamSears.png',
-      name: 'Sam Sears',
-      role: 'Professor of Cardiac Psychology',
-      description: 'East Carolina University',
+      image: '../../../assets/images/expert-photos/RALPHDeFronzo.png',
+      name: 'Ralph DeFronzo',
+      role: 'Endocrinologist',
+      description: 'UT Health San Antonio',
     },
     {
       image: '../../../assets/images/expert-photos/PaulTucker.png',
@@ -232,10 +177,22 @@ export class HomeComponent implements OnInit, AfterViewInit {
       description: 'Texas Heart & Vascular',
     },
     {
-      image: '../../../assets/images/expert-photos/RoderickTung.png',
-      name: 'Roderick Tung',
+      image: '../../../assets/images/expert-photos/RodneyHorton.png',
+      name: 'Rodney Horton',
+      role: 'Cardiac Electrophysiologist',
+      description: 'Texas Cardiac Arrhythmia',
+    },
+    {
+      image: '../../../assets/images/expert-photos/RobertChilton.png',
+      name: 'Robert Chilton',
       role: 'Cardiologist',
-      description: 'University of Arizona Health Sciences',
+      description: 'UT Health San Antonio',
+    },
+    {
+      image: '../../../assets/images/expert-photos/SushPrusty.png',
+      name: 'Sush Prusty',
+      role: 'ER Physician',
+      description: 'Southcoast Health Urgent Care Centers',
     },
     {
       image: '../../../assets/images/expert-photos/CraigWalker.png',
@@ -243,30 +200,61 @@ export class HomeComponent implements OnInit, AfterViewInit {
       role: 'Cardiologist',
       description: 'Cardiovascular Institute of the South',
     },
+    {
+      image: '../../../assets/images/expert-photos/JohnAllison.png',
+      name: 'John Allison',
+      role: 'Cardiac Electrophysiologist',
+      description: 'Texas Cardiac Arrhythmia',
+    },
+    {
+      image: '../../../assets/images/expert-photos/JayMathews2.png',
+      name: 'Jay Mathews',
+      role: 'Cardiologist',
+      description: 'Manatee Memorial Hospital',
+    },
+    {
+      image: '../../../assets/images/expert-photos/GuruKowlgi.png',
+      name: 'Guru Kowlgi',
+      role: 'Cardiac Electrophysiologist',
+      description: 'Mayo Clinic',
+    },
+    {
+      image: '../../../assets/images/expert-photos/SamSears.png',
+      name: 'Sam Sears',
+      role: 'Professor of Cardiac Psychology',
+      description: 'East Carolina University',
+    },
+    {
+      image: '../../../assets/images/expert-photos/AseemDesai.png',
+      name: 'Aseem Desai',
+      role: 'Cardiac Electrophysiologist',
+      description: 'Mission Heritage Medical Group',
+    },
+    {
+      image: '../../../assets/images/expert-photos/MichelleRouthenstein.png',
+      name: 'Michelle Routhenstein',
+      role: 'Registered Dietitian Nutritionist',
+      description: '',
+    },
   ];
   logos = [
-    { src: '../../../assets/images/keys-partner/Ascension.png', alt: 'HMS Logo' },
-    { src: '../../../assets/images/keys-partner/ConnectWell.png', alt: 'White Logo' },
+    { src: '../../../assets/images/keys-partner/BID.png', alt: 'BID' },
+    { src: '../../../assets/images/keys-partner/StDavid_sMedicaCenter.png', alt: "St. David's Medical Center" },
     {
       src: '../../../assets/images/keys-partner/KansasCityHeartRhythmInstitute.png',
-      alt: "St. David's Medical Center",
+      alt: 'HCA MidWest Health',
     },
-    { src: '../../../assets/images/keys-partner/Outgrow.png', alt: 'HMS Logo' },
-    { src: '../../../assets/images/keys-partner/StanfordHealthCare.png', alt: 'White Logo' },
-    { src: '../../../assets/images/keys-partner/StDavid_sMedicaCenter.png', alt: "St. David's Medical Center" },
-    { src: '../../../assets/images/keys-partner/TCA.png', alt: 'SM Web Logo' },
-    { src: '../../../assets/images/keys-partner/TexasDiabetesEndocrinology.jpg', alt: 'SM Web Logo' },
-    { src: '../../../assets/images/keys-partner/TexasHeartVascular.jpg', alt: 'SM Web Logo' },
-    { src: '../../../assets/images/keys-partner/VirginiaCardiovascularSpecialties.png', alt: 'SM Web Logo' },
+    { src: '../../../assets/images/keys-partner/TCA.png', alt: 'Texas Cardiac Arrhythmia' },
+    { src: '../../../assets/images/keys-partner/TexasDiabetesEndocrinology.jpg', alt: 'TexasDiabetesEndocrinology' },
+    { src: '../../../assets/images/keys-partner/StanfordHealthCare.png', alt: 'StanfordHealthCare' },
+    { src: '../../../assets/images/keys-partner/TexasHeartVascular.jpg', alt: 'TexasHeartVascular' },
+    { src: '../../../assets/images/keys-partner/VirginiaCardiovascularSpecialties.png', alt: 'VCN' },
+    { src: '../../../assets/images/keys-partner/Ascension.png', alt: 'Ascension' },
+    { src: '../../../assets/images/keys-partner/HeartHealthCommunity.jpg', alt: 'Heart health community' },
+    { src: '../../../assets/images/keys-partner/Outgrow.png', alt: 'Outgrow' },
+    { src: '../../../assets/images/keys-partner/ConnectWell.png', alt: 'ConnectWell' },
   ];
   customerReviews = [
-    {
-      reviewerName: 'DSDGrammy',
-      reviewHeader: 'EXCELLENT!!!',
-      stars: 5,
-      reviewDetail:
-        "I turned to CardioVisual to research Atrial Fibrillation because my husband experienced this during a medical procedure. I had no idea what it actually was. I was very impressed with the explanation and videos of the heart that CV offered. They were clear, precise, and easy to understand. I was then able to explain to my family what was going on. I have never had a strong understanding of medical terms and issues, so it has been somewhat frightening for me. With CardioVisual, I can read their info on any topic I need to research. I feel like having CardioVisual is like having a 'doctor in the house' to help me understand what my family member is going through and how I can help them. Every doctor should tell their patients about CV. Knowledge at your fingertips reduces fear of the unknown. Thank you, CardioVisual!!!",
-    },
     {
       reviewerName: 'Kip&LaFawnduh',
       reviewHeader: 'Must-have!',
@@ -294,6 +282,13 @@ export class HomeComponent implements OnInit, AfterViewInit {
       stars: 5,
       reviewDetail:
         'I really enjoy this app. I am a visual learner and the videos give me a better understanding of the disease processes with straightforward videos. It has several different health topics and covers treatments for each.',
+    },
+    {
+      reviewerName: 'DSDGrammy',
+      reviewHeader: 'EXCELLENT!!!',
+      stars: 5,
+      reviewDetail:
+        "I turned to CardioVisual to research Atrial Fibrillation because my husband experienced this during a medical procedure. I had no idea what it actually was. I was very impressed with the explanation and videos of the heart that CV offered. They were clear, precise, and easy to understand. I was then able to explain to my family what was going on. I have never had a strong understanding of medical terms and issues, so it has been somewhat frightening for me. With CardioVisual, I can read their info on any topic I need to research. I feel like having CardioVisual is like having a 'doctor in the house' to help me understand what my family member is going through and how I can help them. Every doctor should tell their patients about CV. Knowledge at your fingertips reduces fear of the unknown. Thank you, CardioVisual!!!",
     },
   ];
   statsData = [
@@ -403,22 +398,22 @@ export class HomeComponent implements OnInit, AfterViewInit {
   customWebsiteContent = [
     {
       title: 'Medical Practices',
-      image: '../../../assets/images/Medical-Practices-Hospitals.svg',
-      hoverImage: '../../../assets/images/Medical-Practices-HospitalsWhite.svg',
+      image: '../../../assets/images/Medical Practice_Hospital.png',
+      hoverImage: '../../../assets/images/Medical Practice_Hospital.png',
       altText: '& Hospitals',
       link: 'https://tca.medicalvisual.com/',
     },
     {
       title: 'Specialized Clinics',
-      image: '../../../assets/images/Specialized-Clinics-Centers.svg',
-      hoverImage: '../../../assets/images/Specialized-Clinics-CentersWhite.svg',
+      image: '../../../assets/images/Clinics_Centers.png',
+      hoverImage: '../../../assets/images/Clinics_Centers.png',
       altText: '& Centers',
       link: 'https://cardiacrehab.medicalvisual.com/',
     },
     {
       title: 'Surgical & Procedure',
-      image: '../../../assets/images/Surgical-Procedure-Facilities.svg',
-      hoverImage: '../../../assets/images/Surgical-Procedure-FacilitiesWhite.svg',
+      image: '../../../assets/images/Surgical_Procedure.png',
+      hoverImage: '../../../assets/images/Surgical_Procedure.png',
       altText: 'Facilities',
       link: 'https://cathlab.medicalvisual.com/',
     },
@@ -492,9 +487,9 @@ export class HomeComponent implements OnInit, AfterViewInit {
     this.dialog.closeAll();
     this.selectedReview = null;
   }
-  redirect(url: string , appTemplate ?:TemplateRef<any>) {
+  redirect(url: string, appTemplate?: TemplateRef<any>) {
     if (url === 'open app link Model' && appTemplate) {
-      this.dialog.open(appTemplate)
+      this.dialog.open(appTemplate);
     } else if (!url) {
       console.log('no url');
     } else {
