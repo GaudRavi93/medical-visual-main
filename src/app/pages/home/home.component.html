@@ -196,13 +196,12 @@
     <div class="expert-swiper swiper pt-10 pb-16">
       <div class="swiper-wrapper flex items-center h-full">
         @for (expert of experts; track $index) {
-        <div class="swiper-slide custom-box-shadow bg-white h-auto md:rounded-[16px] rounded-[12px]">
+        <div class="swiper-slide custom-box-shadow bg-white md:rounded-[16px] rounded-[12px] h-auto">
           <img [src]="expert.image" [alt]="expert.name"
-            class="md:rounded-t-[16px] rounded-t-[12px] items-center w-full h-[212px] object-cover justify-center" />
-          <div class="p-4">
-            <p class="text-base font-bold max-h-[120px]">{{ expert.name }}, {{expert.role }}</p>
-            <p [ngClass]="{'min-h-[24px]': expert.name === 'Michelle Routhenstein','min-h-[48px]': expert.name !== 'Michelle Routhenstein'}"
-              class="text-[#7A868C]">
+            class="md:rounded-t-[16px] rounded-t-[12px] items-center w-full lg:h-[212px] h-[345px] object-cover justify-center" />
+          <div class="p-4 lg:min-h-[128px]">
+            <p class="text-base font-bold max-h-[120px] line-clamp-2 max-lg:line-clamp-1">{{ expert.name }}, {{expert.role }}</p>
+            <p class="text-[#7A868C] lg:min-h-[48px] line-clamp-2 max-lg:line-clamp-1">
               {{ expert.description }}
             </p>
           </div>
@@ -372,16 +371,6 @@
               Read about CardioVisual Health's success stories, stay informed with the latest news and media updates,
               and explore informative blogs from our experts
             </div> -->
-          </div>
-          <div class="flex flex-wrap items-center lg:justify-end justify-center sm:gap-4 gap-2">
-            <button
-              class="md:px-6 px-4 py-2 rounded-full border border-[#0471A6] md:text-[20px] text-md max-[375px]:text-sm bg-white text-[#0471A6] hover:bg-[#0471A6] hover:text-white transition md:min-w-[220px] min-w-[160px]">
-              News and Articles
-            </button>
-            <button
-              class="md:px-6 px-4 py-2 rounded-full border border-[#0471A6] md:text-[20px] text-md max-[375px]:text-sm bg-[#0471A6] text-white hover:bg-[#0471A6] hover:text-white transition md:min-w-[220px] min-w-[160px]">
-              Blogs
-            </button>
           </div>
         </div>
 

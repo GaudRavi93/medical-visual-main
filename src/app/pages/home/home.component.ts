@@ -234,7 +234,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
       image: '../../../assets/images/expert-photos/MichelleRouthenstein.png',
       name: 'Michelle Routhenstein',
       role: 'Registered Dietitian Nutritionist',
-      description: '',
+      description: 'Entirely Nourished',
     },
   ];
   logos = [
@@ -353,7 +353,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
       title1: 'For clinics &',
       title2: 'provider systems',
       subtitle: 'Custom Website',
-      link: 'https://product.medicalvisual.com/',
+      link: 'https://medicalvisual.com/product/',
       // description: 'For clinics & provider systems',
     },
     {
@@ -390,7 +390,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
     },
     {
       title: 'Diabetes Self-Management Education',
-      link: 'https://diabetes.medicalvisual.com/clinicians-learning',
+      link: 'https://diabetes.medicalvisual.com/ADA',
       image: '../../../assets/images/Diabetes Self Management Education.png',
     },
   ];
@@ -424,7 +424,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
       title: 'Customize Website',
       image: '../../../assets/images/Custom Website Thumbnail.png',
       hoverImage: '../../../assets/images/Custom Website Thumbnail.png',
-      link: 'https://product.medicalvisual.com/',
+      link: 'https://medicalvisual.com/product/',
     },
     {
       title: 'Download QR Sheets',
