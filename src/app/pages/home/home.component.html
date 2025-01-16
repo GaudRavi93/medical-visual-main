@@ -480,24 +480,26 @@
     </button>
 
     <!-- Review Content -->
-    <h1 class="text-2xl font-semibold text-black mb-4">{{ selectedReview.reviewHeader }}</h1>
-    <div class="flex justify-between items-center mb-4">
-      <div class="flex gap-1">
-        @for (star of [1, 2, 3, 4, 5]; track $index) {
-        <button mat-flat-button [id]="'star_'+$index">
-          <mat-icon [style]="{
-            color: $index < (selectedReview?.stars || 0) ? '#F59E0B' : '#D1D5DB'
-          }">
-            {{showIcon($index,selectedReview?.stars || 0)}}
-          </mat-icon>
-        </button>
-        }
-      </div>
-      <h2 class="text-lg font-medium text-gray-800">{{ selectedReview.reviewerName }}</h2>
-    </div>
-    <p class="text-gray-600 leading-relaxed text-base">
-      {{ selectedReview?.reviewDetail }}
-    </p>
+     <div class="mt-4">
+       <h1 class="text-2xl font-semibold text-black mb-4">{{ selectedReview.reviewHeader }}</h1>
+       <div class="flex justify-between items-center mb-4">
+         <div class="flex gap-1">
+           @for (star of [1, 2, 3, 4, 5]; track $index) {
+           <button mat-flat-button [id]="'star_'+$index">
+             <mat-icon [style]="{
+               color: $index < (selectedReview?.stars || 0) ? '#F59E0B' : '#D1D5DB'
+             }">
+               {{showIcon($index,selectedReview?.stars || 0)}}
+             </mat-icon>
+           </button>
+           }
+         </div>
+         <h2 class="text-lg font-medium text-gray-800">{{ selectedReview.reviewerName }}</h2>
+       </div>
+       <p class="text-gray-600 leading-relaxed text-base">
+         {{ selectedReview?.reviewDetail }}
+       </p>
+     </div>
   </div>
 </ng-template>
 <!-- end review detail template -->
