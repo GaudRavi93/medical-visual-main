@@ -375,6 +375,8 @@ export class HomeComponent implements OnInit, AfterViewInit {
       // description: 'For everyday learning',
     },
   ];
+  linkedinText: string = `SGLT2 Inhibitors: the Future of Heart Failure Management.
+  The 2024 SMART-C Collaborative Meta-Analysis highlighted the pivotal role of SGLT2 ...`;
   youtubVideoContent: any = null;
   selectedReview: any = null;
   contentData = [

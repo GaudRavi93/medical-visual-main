@@ -200,7 +200,8 @@
           <img [src]="expert.image" [alt]="expert.name"
             class="md:rounded-t-[16px] rounded-t-[12px] items-center w-full lg:h-[212px] h-[345px] object-cover justify-center" />
           <div class="p-4 lg:min-h-[128px]">
-            <p class="text-base font-bold max-h-[120px] line-clamp-2 max-lg:line-clamp-1">{{ expert.name }}, {{expert.role }}</p>
+            <p class="text-base font-bold max-h-[120px] line-clamp-2 max-lg:line-clamp-1">{{ expert.name }},
+              {{expert.role }}</p>
             <p class="text-[#7A868C] lg:min-h-[48px] line-clamp-2 max-lg:line-clamp-1">
               {{ expert.description }}
             </p>
@@ -315,7 +316,7 @@
             <div
               class="card bg-white md:rounded-[16px] rounded-[12px] custom-box-shadow transition duration-300 md:col-span-4 sm:col-span-6">
               <img src="../../../assets/images/instagramProfile.png" alt="Texas Diabetes Logo"
-                class="w-full md:rounded-t-[16px] rounded-t-[12px]" />
+                class="w-full md:rounded-t-[16px] rounded-t-[12px] h-[400px]" />
               <div class="p-4">
                 <p class="text-[20px] text-black font-bold">CardioVisual</p>
                 <a class="text-[16px] mt-2 flex items-center gap-2 hover:text-blue-600"
@@ -327,12 +328,14 @@
             <!-- LinkedIn Card -->
             <div
               class="card bg-white md:rounded-[16px] rounded-[12px] custom-box-shadow transition duration-300 md:col-span-4 sm:col-span-6 sm:col-start-4">
-              <img src="../../../assets/images/linkedinProfile.png" alt="Texas Diabetes Logo"
-                class="w-full md:rounded-t-[16px] rounded-t-[12px]" />
+              <img
+                src="https://media.licdn.com/dms/image/v2/D4E22AQEzd1mNr7JEgw/feedshare-shrink_800/B4EZSOf9smHMAk-/0/1737557531968?e=1740614400&v=beta&t=kD9KITFT0ONw56KRNHlqWeZnMW-tuwDa8sw4ir53-SI"
+                alt="LinkedIn post" class="w-full md:rounded-t-[16px] rounded-t-[12px] h-[400px]" />
               <div class="p-4">
-                <p class="text-[20px] text-black font-bold">CardioVisual</p>
+                <p class="text-[20px] text-black font-bold">{{linkedinText}}</p>
                 <a class="text-[16px] mt-2 flex items-center gap-2 hover:text-blue-600"
-                  href="https://www.linkedin.com/company/6424675/" target="_blank">LinkedIn
+                  href="https://www.linkedin.com/feed/update/urn:li:activity:7287850254912126977/"
+                  target="_blank">LinkedIn
                   <mat-icon>launch</mat-icon>
                 </a>
               </div>
@@ -341,7 +344,7 @@
             <div
               class="card bg-white md:rounded-[16px] rounded-[12px] custom-box-shadow transition duration-300 md:col-span-4 sm:col-span-6">
               <img [src]="youtubVideoContent?.snippet?.thumbnails?.high?.url" [alt]="youtubVideoContent?.snippet?.title"
-                class="w-full md:rounded-t-[16px] rounded-t-[12px]" />
+                class="w-full md:rounded-t-[16px] rounded-t-[12px] h-[400px]" />
               <div class="p-4">
                 <p class="text-[20px] text-black font-bold">{{youtubVideoContent?.snippet?.description}}</p>
                 <a class="text-[16px] mt-2 flex items-center gap-2 hover:text-blue-600"
@@ -480,26 +483,26 @@
     </button>
 
     <!-- Review Content -->
-     <div class="mt-4">
-       <h1 class="text-2xl font-semibold text-black mb-4">{{ selectedReview.reviewHeader }}</h1>
-       <div class="flex justify-between items-center mb-4">
-         <div class="flex gap-1">
-           @for (star of [1, 2, 3, 4, 5]; track $index) {
-           <button mat-flat-button [id]="'star_'+$index">
-             <mat-icon [style]="{
+    <div class="mt-4">
+      <h1 class="text-2xl font-semibold text-black mb-4">{{ selectedReview.reviewHeader }}</h1>
+      <div class="flex justify-between items-center mb-4">
+        <div class="flex gap-1">
+          @for (star of [1, 2, 3, 4, 5]; track $index) {
+          <button mat-flat-button [id]="'star_'+$index">
+            <mat-icon [style]="{
                color: $index < (selectedReview?.stars || 0) ? '#F59E0B' : '#D1D5DB'
              }">
-               {{showIcon($index,selectedReview?.stars || 0)}}
-             </mat-icon>
-           </button>
-           }
-         </div>
-         <h2 class="text-lg font-medium text-gray-800">{{ selectedReview.reviewerName }}</h2>
-       </div>
-       <p class="text-gray-600 leading-relaxed text-base">
-         {{ selectedReview?.reviewDetail }}
-       </p>
-     </div>
+              {{showIcon($index,selectedReview?.stars || 0)}}
+            </mat-icon>
+          </button>
+          }
+        </div>
+        <h2 class="text-lg font-medium text-gray-800">{{ selectedReview.reviewerName }}</h2>
+      </div>
+      <p class="text-gray-600 leading-relaxed text-base">
+        {{ selectedReview?.reviewDetail }}
+      </p>
+    </div>
   </div>
 </ng-template>
 <!-- end review detail template -->
