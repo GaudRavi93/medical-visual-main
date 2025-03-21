@@ -102,3 +102,14 @@ body {
     max-width: 100% !important;
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  user-select: none;            /* Disable text selection */
+  -webkit-user-select: none;    /* For Safari */
+  -ms-user-select: none;        /* For IE/Edge */
+  -moz-user-select: none;       /* For Firefox */
+}
