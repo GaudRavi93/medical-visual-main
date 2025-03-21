@@ -1,0 +1,104 @@
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.mission-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.mission-text {
+  font-size: 1.2rem; /* Base size */
+  text-align: center; /* Center-align the text */
+  line-height: 1.5;
+  max-width: 800px; /* Set max-width to avoid stretching */
+  color: #1a1a1a; /* Dark color for good contrast */
+}
+
+/* Sponsor and Partner Headings */
+.sponsor,
+.partner {
+  padding: 20px;
+  margin: 10px 0;
+}
+
+/* Logos Section */
+.logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.opportunities-section {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  color: #1a1a1a;
+  font-family: 'Arial', sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #000;
+}
+
+textarea {
+  height: 150px;
+  min-height: 150px;
+  max-height: 200px;
+}
+
+.submit-btn,
+.general-inquires-btn {
+  width: 200px;
+  padding: 10px;
+  margin: 10px auto;
+  display: block;
+  border: 1px solid #000;
+  background-color: white;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+
+.general-inquires-btn {
+  background-color: white;
+}
+
+button:hover {
+  background-color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+  .opportunities-section {
+    padding: 15px;
+  }
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+  .sponsor,
+  .partner {
+    width: 100%;
+  }
+
+  .mission-text {
+    font-size: 1rem;
+  }
+}
