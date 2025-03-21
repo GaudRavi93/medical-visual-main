@@ -392,7 +392,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
     },
     {
       title: 'Diabetes Self-Management Education',
-      link: 'https://diabetes.medicalvisual.com/ADA',
+      link: 'https://dsmt.medicalvisual.com/',
       image: '../../../assets/images/Diabetes Self Management Education.png',
     },
   ];
