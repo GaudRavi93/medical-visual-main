@@ -1,0 +1,191 @@
+<section class="bg-white relative">
+  <div class="container mx-auto">
+    <div class="mission-container">
+      <p class="mission-text">
+        Support our mission to better inform patients and improve health outcomes through credible, expert-driven
+        video-based education.
+      </p>
+    </div>
+
+    <section class="sponsor-partner">
+      <div class="sponsor">
+        <h2 class="text-4xl font-bold">Sponsor Us</h2>
+        <p class="text-2xl font-bold pb-4">Our Content Sponsors:</p>
+        <div class="logos">
+          @for (sponser of sponsorsList; track $index) {
+            <img class="h-auto max-w-80 max-h-[110px] mx-auto" [src]="sponser.image" alt="sponser.name" />
+          }
+        </div>
+        <div class="flex justify-end font-bold text-2xl pt-4">
+          <a href="/#sponsers">& More!</a>
+        </div>
+      </div>
+
+      <div class="partner">
+        <h2 class="text-4xl font-bold">Partner With Us</h2>
+        <p class="text-2xl font-bold pb-4">Our Point-of-Care Partners:</p>
+        <div class="logos">
+          @for (partner of partnersList; track $index) {
+            <img class="h-auto max-w-80 max-h-[110px] mx-auto" [src]="partner.image" alt="partner.name" />
+          }
+        </div>
+        <div class="flex justify-end font-bold text-2xl pt-4">
+          <a href="/#key-users-partners">& More!</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="opportunities-section">
+      <h2 class="text-4xl font-semibold mb-8">Opportunities</h2>
+
+      <p>
+        By sponsoring MedicalVisual’s initiatives on our multichannel platforms, your organization can make a meaningful
+        impact in advancing patient education globally using technology and improving the quality of healthcare.
+      </p>
+
+      <div class="opportunities-list">
+        <p class="flex pl-5 mt-5">Opportunities:</p>
+        <ul class="text-left pl-5">
+          <li class="mb-2">
+            <strong class="font-bold">Co-Branded Educational Content:</strong> Collaborate with us to create educational
+            content tailored to clinicians and/or patients.
+          </li>
+          <li class="mb-2">
+            <strong class="font-bold">Co-Branded Social Media Campaigns:</strong> Share your message with our community
+            of 800,000+ clinicians and patients through engaging social media posts.
+          </li>
+          <li class="mb-2">
+            <strong class="font-bold">Live Presentations:</strong> Share your expertise or sponsor live discussions via
+            social media featuring key opinion leaders on various cardiometabolic and wellness topics, reaching 800,000+
+            followers.
+          </li>
+          <li class="mb-2">
+            <strong class="font-bold">Ad Placements:</strong> Gain visibility with ad placements on our digital
+            channels.
+          </li>
+          <li class="mb-2">
+            <strong class="font-bold">Dedicated Content Channels:</strong> Build a branded presence in our mobile app or
+            on our website to deliver targeted, impactful messaging.
+          </li>
+        </ul>
+      </div>
+
+      <div class="p-5 mt-8">
+        <h2 class="text-4xl font-semibold mb-8">Let’s Make a Difference Together</h2>
+        <p>
+          Fill out the form below, or email us at
+          <a href="mailto:partnerships@medicalvisual.com" class="text-[#007bff] text-bold hover:underline"
+            >partnerships&#64;medicalvisual.com</a
+          >
+          and our team will reach out to explore a customized sponsorship or collaboration that aligns with our shared
+          goals.
+        </p>
+      </div>
+    </section>
+
+    <section class="contact-form">
+      <form class="flex flex-col" [formGroup]="contactForm">
+        <div class="flex justify-between">
+          <div class="flex-1 mr-2 mb-4">
+            <label for="first-name" class="mb-1">First Name *</label>
+            <input type="text" id="first-name" name="first-name" formControlName="firstName" />
+            @if (contactForm.get('firstName')?.touched && contactForm.get('firstName')?.invalid) {
+              <div>
+                @if (contactForm.get('firstName')?.errors?.['required']) {
+                  <small class="text-red-600">First Name is required.</small>
+                }
+                @if (contactForm.get('firstName')?.errors?.['minlength']) {
+                  <small class="text-red-600">Minimum 3 characters required.</small>
+                }
+              </div>
+            }
+          </div>
+          <div class="flex-1 mr-2 mb-4">
+            <label for="last-name" class="mb-1">Last Name *</label>
+            <input type="text" id="last-name" name="last-name" formControlName="lastName" />
+            @if (contactForm.get('lastName')?.touched && contactForm.get('lastName')?.invalid) {
+              <div>
+                @if (contactForm.get('lastName')?.errors?.['required']) {
+                  <small class="text-red-600">Last Name is required.</small>
+                }
+                @if (contactForm.get('lastName')?.errors?.['minlength']) {
+                  <small class="text-red-600">Minimum 3 characters required.</small>
+                }
+              </div>
+            }
+          </div>
+        </div>
+
+        <div class="flex justify-between">
+          <div class="flex-1 mr-2 mb-4">
+            <label for="title" class="mb-1">Title *</label>
+            <input type="text" id="title" name="title" formControlName="title" />
+            @if (contactForm.get('title')?.touched && contactForm.get('title')?.invalid) {
+              <div>
+                @if (contactForm.get('title')?.errors?.['required']) {
+                  <small class="text-red-600">Title is required.</small>
+                }
+              </div>
+            }
+          </div>
+          <div class="flex-1 mr-2 mb-4">
+            <label for="organization" class="mb-1">Organization *</label>
+            <input type="text" id="organization" name="organization" formControlName="organization" />
+            @if (contactForm.get('organization')?.touched && contactForm.get('organization')?.invalid) {
+              <div>
+                @if (contactForm.get('organization')?.errors?.['required']) {
+                  <small class="text-red-600">Organization is required.</small>
+                }
+              </div>
+            }
+          </div>
+        </div>
+
+        <div class="flex-1 mr-2 mb-4">
+          <label for="email" class="mb-1">Email *</label>
+          <input type="email" id="email" name="email" formControlName="email" />
+          @if (contactForm.get('email')?.touched && contactForm.get('email')?.invalid) {
+            <div>
+              @if (contactForm.get('email')?.errors?.['required']) {
+                <small class="text-red-600">Email is required.</small>
+              }
+              @if (contactForm.get('email')?.errors?.['email']) {
+                <small class="text-red-600">Please enter a valid email address.</small>
+              }
+            </div>
+          }
+        </div>
+
+        <div class="flex-1 mr-2 mb-4">
+          <label for="subject" class="mb-1">Subject *</label>
+          <input type="text" id="subject" name="subject" formControlName="subject" />
+          @if (contactForm.get('subject')?.touched && contactForm.get('subject')?.invalid) {
+            <div>
+              @if (contactForm.get('subject')?.errors?.['required']) {
+                <small class="text-red-600">Subject is required.</small>
+              }
+            </div>
+          }
+        </div>
+
+        <div class="flex-1 mr-2 mb-4">
+          <label for="message" class="mb-1">Message *</label>
+          <textarea id="message" name="message" formControlName="message"></textarea>
+          @if (contactForm.get('message')?.touched && contactForm.get('message')?.invalid) {
+            <div>
+              @if (contactForm.get('message')?.errors?.['required']) {
+                <small class="text-red-600">Message is required.</small>
+              }
+              @if (contactForm.get('message')?.errors?.['minlength']) {
+                <small class="text-red-600">Minimum 10 characters required.</small>
+              }
+            </div>
+          }
+        </div>
+
+        <button type="button" class="submit-btn" (click)="onSubmit()">Submit</button>
+        <button type="button" class="general-inquires-btn" (click)="onGeneralInquires()">General Inquires</button>
+      </form>
+    </section>
+  </div>
+</section>
